@@ -1,0 +1,90 @@
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: 'junicode';
+    src: url('type/junicode.ttf') format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'junicode';
+    src: url('type/junicode-italic.ttf') format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'junius';
+    src: url('type/juniusx-condensed.ttf') format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'junius';
+    src: url('type/juniusx-condensedbold.ttf') format("truetype");
+    font-weight: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    line-height: 1.25;
+}
+*, ::after, ::before {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}
+
+a {
+    color: tomato;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'junius';
+    font-weight: 400;
+}
+
+section {
+    font-family: 'junicode';
+    font-size: 2rem;
+    margin-right: 60px;
+    padding: 1rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100vh;
+    border-left: 2px dotted black;
+    box-sizing: border-box;
+}
+
+header h1 {
+    padding: 1rem 10px;
+    writing-mode: vertical-lr;
+    font-size: 2rem;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+}
+
+
+/*----------Courtesy of Jon Gacnik https://jongacnik.com/text/ellipses-loader ---------*/
+
+.ellipses-loader {
+    animation: ellipses-loader 2s linear infinite;
+}
+  
+@keyframes ellipses-loader {
+    0% { clip-path: inset(0 100% 0 0) }
+    24.9% { clip-path: inset(0 100% 0 0) }
+    25% { clip-path: inset(0 66% 0 0) }
+    49.9% { clip-path: inset(0 66% 0 0) }
+    50% { clip-path: inset(0 33% 0 0) }
+    74.9% { clip-path: inset(0 33% 0 0) }
+    75% { clip-path: inset(0 0 0 0) }
+    100% { clip-path: inset(0 0 0 0) }
+}
