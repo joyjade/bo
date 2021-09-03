@@ -25,6 +25,11 @@
     font-weight: 700;
 }
 
+:root {
+  --font-size: 1.7rem;
+  --border-margin: 1rem;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -40,6 +45,14 @@ a {
     color: tomato;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 2rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'junius';
     font-weight: 400;
@@ -47,9 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
     font-family: 'junicode';
-    font-size: 2rem;
+    font-size: var(--font-size);
     margin-right: 60px;
-    padding: 1rem;
+    padding: var(--border-margin);
 }
 
 header {
@@ -58,17 +71,19 @@ header {
     right: 0;
     width: 60px;
     height: 100vh;
-    border-left: 2px dotted black;
+    border-left: 1px solid black;
     box-sizing: border-box;
 }
 
 header h1 {
-    padding: 1rem 10px;
+    padding: var(--border-margin);
     writing-mode: vertical-lr;
-    font-size: 2rem;
+    font-size: var(--font-size);
     display: flex;
     height: inherit;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
 
