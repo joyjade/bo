@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
 section {
     font-family: 'junicode';
     font-size: var(--font-size);
-    margin-right: 60px;
+    /* margin-right: 60px; */
     padding: var(--border-margin);
 }
 
@@ -78,12 +78,17 @@ header {
 header h1 {
     padding: var(--border-margin);
     writing-mode: vertical-lr;
-    font-size: var(--font-size);
     display: flex;
     height: inherit;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 0;
 }
 
 
