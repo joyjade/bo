@@ -1,0 +1,110 @@
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: 'junicode';
+    src: url('type/junicode.ttf') format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'junicode';
+    src: url('type/junicode-italic.ttf') format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'junius';
+    src: url('type/juniusx-condensed.ttf') format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'junius';
+    src: url('type/juniusx-condensedbold.ttf') format("truetype");
+    font-weight: 700;
+}
+
+:root {
+  --font-size: 1.7rem;
+  --border-margin: 1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    line-height: 1.25;
+}
+*, ::after, ::before {
+    background-repeat: no-repeat;
+    box-sizing: inherit;
+}
+
+a {
+    color: tomato;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li, p {
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'junius';
+    font-weight: 400;
+}
+
+section {
+    font-family: 'junicode';
+    font-size: var(--font-size);
+    /* margin-right: 60px; */
+    padding: var(--border-margin);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100vh;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+}
+
+header h1 {
+    padding: var(--border-margin);
+    writing-mode: vertical-lr;
+    display: flex;
+    height: inherit;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 0;
+}
+
+
+/*----------Courtesy of Jon Gacnik https://jongacnik.com/text/ellipses-loader ---------*/
+
+.ellipses-loader {
+    animation: ellipses-loader 2s linear infinite;
+}
+  
+@keyframes ellipses-loader {
+    0% { clip-path: inset(0 100% 0 0) }
+    24.9% { clip-path: inset(0 100% 0 0) }
+    25% { clip-path: inset(0 66% 0 0) }
+    49.9% { clip-path: inset(0 66% 0 0) }
+    50% { clip-path: inset(0 33% 0 0) }
+    74.9% { clip-path: inset(0 33% 0 0) }
+    75% { clip-path: inset(0 0 0 0) }
+    100% { clip-path: inset(0 0 0 0) }
+}
