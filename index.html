@@ -1,37 +1,12 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bo Hwang</title>
-    <link rel="stylesheet" href="assets/global.css">
-</head>
-<body>
-    <section>
-        <p>
-          Bo Hwang writes story-like poems and poem-like stories. They like each other anyway. She was a 2022 Periplus Fellow and is currently the Anselm Hollo Fellow at Naropa University where she is working on a collection of short stories. You can find a sliver of her work below. 
-          <a href="https://twitter.com/_bohwang" target="_b">@_bohwang</a>
-        </p>
-        <ul>
-          <li>
-            <a href="https://www.poetryproject.org/publications/footnotes/work-from-memory-palaces-visions-echoes-forms-with-lucy-ives/she-did-not-sing">She Did Not Sing</a>
-            <i>May 2021, The Poetry Project</i>
-            <p>
-              Who can resist a good container? Outlined in silver, the naked couple held hands. A small vine climbed each leg. I thumbed over the pair of sloping shoulders, thick backs, and flat cheeks<a href="https://www.poetryproject.org/publications/footnotes/work-from-memory-palaces-visions-echoes-forms-with-lucy-ives/she-did-not-sing" class="ellipses-loader">...</a>
-            </p>
-          </li>
-          <li>
-            <a href="https://readwildness.com/20/hwang-makon">Visit to Makon</a>
-            <i>August 2019, Wildness</i>
-            <p>
-                After a winter of droughts, my childhood friend—my only 
-                kind of sweetheart—moves back to Makon. The city we grew up in; 
-                the city we all left. She’s there now, in a house with twelve women, only one her age, 
-                a high school teacher from another island, the rest are medical students.
-                “Seven balconies,” she boasts<a href="https://readwildness.com/20/hwang-makon" class="ellipses-loader">...</a>
-            </p>
-          </li>
-        </ul>
-          
-    </section>
-</body>
-</html>
+---
+layout: columns.html
+title: Bo Hwang, spells
+---
+<ul>
+  {% for work in collections.work %}
+  <li>
+    <a href="{{ work.data.url }}">{{ work.data.title }}</a>
+    <i>{{ work.data.pub_date }}, {{ work.data.publisher }}</i>
+    <p>{{ work.data.preview }}</p>
+  {% endfor %}
+</ul>
