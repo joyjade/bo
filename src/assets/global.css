@@ -26,8 +26,9 @@
 }
 
 :root {
-  --font-size: 1.7rem;
-  --border-margin: 1rem;
+  --font-size: 1rem;
+  --border-margin: 0.5rem;
+  --bg-color: tomato; 
 }
 
 * {
@@ -45,12 +46,63 @@ a {
     color: tomato;
 }
 
-ul {
-  list-style-type: none;
+body {
+  max-height: 100dvh;
+  width: 100vw;
+  max-width: 100vw;
 }
 
-ul li, p {
-  margin-bottom: 2rem;
+main {
+  width: 100vw;
+  max-width: 100vw;
+  display: grid;
+  grid-template-areas:
+  "work work"
+  "notes  info";
+  grid-template-rows: 1fr auto;
+  height: 100dvh;
+  
+  font-family: 'junicode';
+  font-size: var(--font-size);
+}
+
+section.work {
+  max-width: 100vw;
+  width: 100vw;
+  display: flex;
+  grid-area: work;
+}
+
+section.info {
+  grid-area: info;
+  width: 50vw;
+}
+
+section ul {
+  list-style-type: none;
+  width: 25vw;
+  position: relative;
+  box-sizing: border-box;
+}
+
+li.category {
+  padding: calc( var(--border-margin) * 0.5 ) var(--border-margin);
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  width: 100%;
+}
+
+li.category:not(:last-of-type) {
+}
+
+li, img {
+  width: inherit;
+}
+
+p {
+  padding-left: var(--border-margin);
+  padding-bottom: var(--border-margin);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,11 +110,8 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
-section {
-    font-family: 'junicode';
-    font-size: var(--font-size);
-    /* margin-right: 60px; */
-    padding: var(--border-margin);
+li.square img {
+  width: 70%;
 }
 
 header {
@@ -83,12 +132,6 @@ header h1 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-}
-
-section {
-    display: flex;
-    flex-flow: column;
-    flex: 1 1 0;
 }
 
 
