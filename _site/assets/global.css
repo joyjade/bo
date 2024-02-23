@@ -2,26 +2,26 @@
 
 @font-face {
     font-family: 'junicode';
-    src: url('/type/junicode.ttf') format("truetype");
+    src: url('/assets/type/junicode.ttf') format("truetype");
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'junicode';
-    src: url('/type/junicode-italic.ttf') format("truetype");
+    src: url('/assets/type/junicode-italic.ttf') format("truetype");
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'junius';
-    src: url('/type/juniusx-condensed.ttf') format("truetype");
+    src: url('/assets/type/juniusx-condensed.ttf') format("truetype");
     font-weight: 400;
 }
 
 @font-face {
     font-family: 'junius';
-    src: url('/type/juniusx-condensedbold.ttf') format("truetype");
+    src: url('/assets/type/juniusx-condensedbold.ttf') format("truetype");
     font-weight: 700;
 }
 
@@ -86,11 +86,12 @@ section ul {
 }
 
 li.category {
-  padding: calc( var(--border-margin) * 0.5 ) var(--border-margin);
+  padding: calc( var(--border-margin) * 0.55 ) var(--border-margin) calc( var(--border-margin) * 0.25 ) ;
   position: sticky;
   top: 0;
   background-color: var(--bg-color);
   width: 100%;
+  line-height: 1.5;
 }
 
 li.category:not(:last-of-type) {
