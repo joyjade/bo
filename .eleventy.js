@@ -2,11 +2,12 @@ const yaml = require("js-yaml");
 
 module.exports = function(eleventyConfig) {
 
-  eleventyConfig.setTemplateFormats("html,css,njk,ttf");
+  eleventyConfig.setTemplateFormats("html,css,js,njk,ttf");
 
   eleventyConfig.addPassthroughCopy("src/assets/global.css");
   eleventyConfig.addPassthroughCopy("src/assets/type");
   eleventyConfig.addPassthroughCopy("src/assets/images");
+  eleventyConfig.addPassthroughCopy("src/assets/site.js");
 
   eleventyConfig.addDataExtension("yaml", contents => yaml.load(contents));
 

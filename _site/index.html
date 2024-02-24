@@ -7,7 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bo Hwang </title>
     <link rel="stylesheet" href="assets/global.css">
-</head>
+
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png">
+    
+
+    <script src="assets/site.js" charset="utf-8"></script>
+  </head>
 
 <body>
     
@@ -16,7 +23,7 @@
     <ul class="published">
       <li class="category">Shorts</li>
       <div class="sticky"> 
-      
+        
           
             
 <li>
@@ -32,7 +39,7 @@
 </li>
 
             
-      
+        
           
             
 <li>
@@ -48,14 +55,15 @@
 </li>
 
             
-      
+        
             
-      
+        
             
-      
+        
             
-      
+        
       </div>
+      
     </ul>
     <ul>
       <li class="category">Movement</li>
@@ -128,10 +136,36 @@
     <p>Bo Hwang is an artist and writer working in poetry, movement and things so mundane, “nothing” happens. She lives in Colorado where she is the 2022 Anselm Hollo Fellow at Naropa University. Previously, she was a 2022 Periplus Fellow. Previously, she grew up in Indonesia.</p>
   </section>
 
-  <div class="social">
-    <a href="https://www.instagram.com/bohwang__/" target="_blank">@bohwang__</a>
+  <div class="bar">
+    <div class="item">
+      <div class="link">
+        <a href="https://www.instagram.com/bohwang__/" target="_blank">@bohwang__</a>
+      </div>
+    </div>
+    <div class="item">
+      <div class="more credits" data-text="The image above ‘Visit to Makon’ was created by <a href='https://sometimes-always.com/' target='_blank'>Sometimes Always</a> for <a href='https://publicrecords.nyc/' target='_blank'>Public Record</a>’s launch of The Nursery. All other images are from by the artist.">
+        <span>credits</span>
+      </div>
+    </div>
   </div>
 </main>
+
+<script type="text/javascript">
+  let more = document.querySelector('.more');
+
+  more.addEventListener("click", function (e) {
+    let el=e.currentTarget;
+    let html=el.querySelector('span');
+
+    if(!el.classList.contains('open')){
+        el.classList.add('open');
+        html.innerHTML=el.dataset.text;
+    }else{
+      el.classList.remove('open');
+      html.innerText='credits';
+    }  
+  });
+</script>
 
 </body>
 </html>
