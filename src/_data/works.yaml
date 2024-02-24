@@ -1,40 +1,41 @@
 ---
-  - title: Visit to Makon 
-    publisher: Wildness
-    pub_date: August 2019
-    type: published
-    url: https://readwildness.com/20/hwang-makon
-    img: assets/images/banyantree_sometimesalways.jpg
-    caption: 
-    preview: After a winter of droughts, my childhood friend—my only kind of sweetheart—moves back to Makon. The city we grew up in; the city we all left. She’s there now, in a house with twelve women, only one her age, a high school teacher from another island, the rest are medical students. “Seven balconies,” she boasts<a href="https://readwildness.com/20/hwang-makon" class="ellipses-loader">...</a>
-
   - title: She Did Not Sing
     publisher: The Poetry Project
-    pub_date: May 2021
     type: published
     url: https://www.poetryproject.org/publications/footnotes/work-from-memory-palaces-visions-echoes-forms-with-lucy-ives/she-did-not-sing
     img: assets/images/fishhead.jpg
     caption: 
     preview: Who can resist a good container? Outlined in silver, the naked couple held hands. A small vine climbed each leg. I thumbed over the pair of sloping shoulders, thick backs, and flat cheeks<a href="https://www.poetryproject.org/publications/footnotes/work-from-memory-palaces-visions-echoes-forms-with-lucy-ives/she-did-not-sing" class="ellipses-loader">...</a>
+    notes: May 2021
   
-  - title: "Movement Workshops: Slothing Sleuthing, Frantic Assembly, Body Language, Earthworks, Blobjects"
-    publisher: Naropa University
-    pub_date: October 2023 - May 2024
-    type: performance
-    img: assets/images/movement.jpg
+  - title: Visit to Makon 
+    publisher: Wildness
+    type: published
+    url: https://readwildness.com/20/hwang-makon
+    img: assets/images/banyantree_sometimesalways.jpg
     caption: 
-  
-  - title: Saretta Morgan's AltNature
-    publisher: Counterpath
-    pub_date: March 18 2024
-    type: performance
-    img: assets/images/slopping.jpg
-    caption: 
+    preview: “We can never go back,” I said softly, offering her a mantra, an antidote for keeping memory at bay. Even now, I hold those words close to my body, low, against the liver<a href="https://readwildness.com/20/hwang-makon" class="ellipses-loader">...</a>
+    notes: August 2019
 
-  - title: carpet jaw [sudjud]
-    publisher: Denver Quarterly
-    pub_date: March 18 2024
-    type: critical
-    img: assets/images/dojjjj.jpg
-    caption: 
-    classes: square
+  - title: Alt-Nature @ Counterpath
+    date: Monday, March 18 2024
+    label: upcoming
+    venue: Counterpath
+    type: movement
+    img: assets/images/slopping.jpg
+    details: In celebration of Saretta Morgan’s new book, <i>Alt-Nature</i> from Coffee House Press, a performance with remy malik and Brian Alarcon.
+
+  - title: "Movement Workshops: slothing sleuthing, frantic assembly, body language, earthworks, blobjects in touch"
+    date: Oct 2023 - May 2024
+    label: ongoing
+    venue: Naropa University
+    type: movement
+    img: assets/images/movement.jpg
+    details: 
+  
+  - title: carpet jaw [sūdjūd] with remy malik
+    date: July 2023
+    venue: Summer Writing Program 2023 
+    type: movement
+    img: assets/images/sudjud_3.jpg
+    details: 

@@ -1,63 +1,63 @@
-{% macro html(works, bio)%}
+{% import 'works.njk' as wks %}
+
+{% macro html(works, bio, status)%}
 <main data-view="columns">
   <section class="work">
-    <ul>
-      <li class="category">Pieces</li>
+    <ul class="published">
+      <li class="category">Shorts</li>
+      <div class="sticky"> 
       {% for work in works %}
           {% if work.type == 'published' %}
-            <li>
-              {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
-              <p>
-                <a href="/{{ work.url }}">{{ work.title }}</a>
-                <i>{{ work.pub_date }}, {{ work.publisher }}</i>
-              </p>
-              {# <p>{{ work.preview | safe }}</p> #}
-            </li>
+            {{ wks.published(work) }}
           {% endif %}  
       {% endfor %}
+      </div>
     </ul>
     <ul>
       <li class="category">Movement</li>
       {% for work in works %}
-        {% if work.type == 'performance' %}
-          <li>
-            {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
-            <p>
-              {{ work.title }}
-              <i>{{ work.pub_date }}, {{ work.publisher }}</i>
-            </p>
-          </li>
+        {% if work.type == 'movement' %}
+            {{ wks.movement(work) }}
         {% endif %}  
       {% endfor %}
     </ul>
-    <ul>
-      <li class="category">Critical</li>
-      {% for work in works %}
-        {% if work.type == 'critical' %}
-          <li class="{{ work.classes }}">
-            {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
-            <p>
-              {{ work.title }}
-              <i>{{ work.pub_date }}, {{ work.publisher }}</i>
-            </p>
-          </li>
-        {% endif %}  
-      {% endfor %}
-    </ul>
-    <ul>
-      <li class="category">Books</li>
-      {% for work in works %}
-        {% if work.type == 'books' %}
-          <li class="{{ work.classes }}">
-            {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
-            <p>
-              {{ work.title }}
-              <i>{{ work.pub_date }}, {{ work.publisher }}</i>
-            </p>
-          </li>
-        {% endif %}  
-      {% endfor %}
-    </ul>
+    {% if status == "prelaunch" %}
+      <ul class="placeholder">
+        <li class="category"> </li>
+      </ul>
+      <ul class="placeholder">
+        <li class="category"> </li>
+      </ul>
+    {% else %}
+      <ul>
+        <li class="category">Critical</li>
+        {% for work in works %}
+          {% if work.type == 'critical' %}
+            <li class="{{ work.classes }}">
+              {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+              <p>
+                {{ work.title }}
+                <i>{{ work.pub_date }}, {{ work.publisher }}</i>
+              </p>
+            </li>
+          {% endif %}  
+        {% endfor %}
+      </ul>
+      <ul>
+        <li class="category">Books</li>
+        {% for work in works %}
+          {% if work.type == 'books' %}
+            <li class="{{ work.classes }}">
+              {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+              <p>
+                {{ work.title }}
+                <i>{{ work.pub_date }}, {{ work.publisher }}</i>
+              </p>
+            </li>
+          {% endif %}  
+        {% endfor %}
+      </ul>
+    {% endif %}
   </section>
 
 
@@ -65,6 +65,8 @@
     <p>{{ bio | safe }}</p>
   </section>
 
-
+  <div class="social">
+    <a href="https://www.instagram.com/bohwang__/" target="_blank">@bohwang__</a>
+  </div>
 </main>
 {% endmacro %}
