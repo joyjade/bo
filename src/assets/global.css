@@ -223,6 +223,9 @@ section.info p {
 }
 
 @media (max-width: 450px)  {
+  :root {
+    --font-size: 1.2rem;
+  }
   section.work {
     display: inline-block;
   }
