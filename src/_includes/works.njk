@@ -1,0 +1,31 @@
+{% macro published(work)%}
+<li>
+  <a href="{{ work.url }}" target="_blank">
+    {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+    <h3>
+      <span class="highlight">{{ work.title }}<span>, <i>{{ work.publisher }}</i>
+    </h3>
+    <p>
+      {{ work.preview | safe }}
+    </p>
+  </a>
+</li>
+{% endmacro %}
+
+{% macro movement(work)%}
+<li>
+  {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+  <h3>
+    {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
+    {{ work.title }}
+  </h3>
+  <p>
+    {% if work.details %}{{ work.details | safe}}{% endif %}  
+  </p>
+  {# <p>
+    {{ work.date }}, {{ work.venue }}
+  </p> #}
+</li>
+{% endmacro %}
+
+

@@ -1,0 +1,20 @@
+---
+bio: Bo Hwang is an artist and writer working in poetry, movement and things so mundane, “nothing” happens. She lives in Colorado where she is the 2022 Anselm Hollo Fellow at Naropa University. Previously, she was a 2022 Periplus Fellow. Previously, she grew up in Indonesia. 
+status: prelaunch
+---
+
+{% import 'columns.njk' as columns %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} </title>
+    <link rel="stylesheet" href="assets/global.css">
+</head>
+
+<body>
+    {{columns.html(works, bio, status)}}
+</body>
+</html>
