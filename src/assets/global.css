@@ -91,7 +91,7 @@ p {
   padding-bottom: var(--border-margin);
 }
 
-ul.published h3 {
+ul.published a h3 {
   color: var(--bg-color);
 }
 

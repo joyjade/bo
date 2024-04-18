@@ -1,8 +1,9 @@
 {% macro published(work)%}
 <li>
-  <a href="{{ work.url }}" target="_blank">
+  {% if work.url %}<a href="{{ work.url }}" target="_blank">{% endif %}  
     {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
     <h3>
+      {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
       <span class="highlight">{{ work.title }}<span>, <i>{{ work.publisher }}</i>
     </h3>
     <p>
