@@ -17,8 +17,12 @@
 <li>
   {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
   <h3>
-    {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
-    {{ work.title }}
+    <span class="label">{{ work.label if work.label else work.date}}</span>
+    {% if work.url %}
+      <a href="{{ work.url }}">{{ work.title }}</a>
+    {% else %}  
+      {{ work.title }}
+    {% endif %}  
   </h3>
   <p>
     {% if work.details %}{{ work.details | safe}}{% endif %}  

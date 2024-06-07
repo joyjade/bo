@@ -1,8 +1,8 @@
 ---
   - title: Slat
-    publisher: Bombay Gin
+    publisher: Bombay Gin 
     type: published
-    label: forthcoming
+    label: 
     url: 
     img: assets/images/slopping.jpg
     caption: 
@@ -27,13 +27,23 @@
     preview: “We can never go back,” I said softly, offering her a mantra, an antidote for keeping memory at bay. Even now, I hold those words close to my body, low, against the liver<a href="https://readwildness.com/20/hwang-makon" class="ellipses-loader">...</a>
     notes: August 2019
 
+  - title: carpet jaw [sūdjūd] with remy malik
+    label:  
+    date: June 2024
+    url: https://fivesquarterly.com/bo-hwang-remy-malik/
+    venue: "F I V E S: Denver Quarterly"
+    type: movement
+    img: assets/images/sudjud_3.jpg
+    details: "F I V E S: Denver Quarterly"
+
   - title: Alt-Nature, Counterpath
-    date: Monday, March 18 2024
+    date: March 2024
+    url: 
     label: 
     venue: Counterpath
     type: movement
     img: assets/images/altnature.jpg
-    details: In celebration of Saretta Morgan’s book release, <i>Alt-Nature</i> from Coffee House Press, a performance with remy malik and Brian Alarcon.
+    details: In celebration of Saretta Morgan’s book release, <i>Alt-Nature</i> from Coffee House Press, a performance with remy malik and Brian Alarcon. <a href="https://vimeo.com/939423346" target="_blank">Watch here.</a>
 
   - title: "Movement Workshops: slothing sleuthing, frantic assembly, body language, earthworks, blobjects in touch"
     date: Oct 2023 - May 2024
@@ -43,10 +53,3 @@
     img: assets/images/movement.jpg
     details: 
   
-  - title: carpet jaw [sūdjūd] with remy malik
-    label: forthcoming 
-    date: July 2023
-    venue: "F I V E S: Denver Quarterly"
-    type: movement
-    img: assets/images/sudjud_3.jpg
-    details: "F I V E S: Denver Quarterly (Spring 2024)"
