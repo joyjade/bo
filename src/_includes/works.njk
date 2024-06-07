@@ -18,7 +18,7 @@
   {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
   <h3>
     {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
-    {{ work.title }}
+    <a href="/works/{{work.title | slug}}">{{ work.title }}</a>
   </h3>
   <p>
     {% if work.details %}{{ work.details | safe}}{% endif %}  

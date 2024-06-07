@@ -1,6 +1,11 @@
+---
+layout: base.njk
+---
+
 {% import 'works.njk' as wks %}
 
-{% macro html(works, bio, status)%}
+
+
 <main data-view="columns">
   <section class="work">
     <ul class="published">
@@ -31,7 +36,7 @@
       </ul>
     {% else %}
       <ul>
-        <li class="category">Critical</li>
+        <li class="category">*</li>
         {% for work in works %}
           {% if work.type == 'critical' %}
             <li class="{{ work.classes }}">
@@ -45,7 +50,7 @@
         {% endfor %}
       </ul>
       <ul>
-        <li class="category">Books</li>
+        <li class="category"><a href="/">Back</a></li>
         {% for work in works %}
           {% if work.type == 'books' %}
             <li class="{{ work.classes }}">
@@ -63,7 +68,6 @@
 
 
   <section class="info">
-    <p>{{ bio | safe }}</p>
   </section>
 
   <div class="bar">
@@ -80,7 +84,7 @@
   </div>
 </main>
 
-<script type="text/javascript">
+{# <script type="text/javascript">
   let more = document.querySelector('.more');
 
   more.addEventListener("click", function (e) {
@@ -95,6 +99,5 @@
       html.innerText='credits';
     }  
   });
-</script>
-{% endmacro %}
+</script> #}
 

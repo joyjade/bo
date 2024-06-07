@@ -1,5 +1,10 @@
 ---
-layout: base.njk
+pagination: 
+  data: works
+  size: 1
+  alias: work
+permalink: 'works/{{ pagination.items[0].title | slug }}/index.html'
+layout: columns.njk
 ---
-<h2>{{ title }}</h2>
-{{ content }}
+
+{{ content | safe }}
