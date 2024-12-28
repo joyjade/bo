@@ -4,7 +4,7 @@
 <main data-view="columns">
   <section class="work">
     <ul class="published">
-      <li class="category">Shorts</li>
+      <li class="category">Writing</li>
       <div class="sticky"> 
         {% for work in works %}
           {% if work.type == 'published' %}
@@ -15,7 +15,7 @@
       
     </ul>
     <ul>
-      <li class="category">Movement</li>
+      <li class="category">Movement, Performance, Teaching</li>
       {% for work in works %}
         {% if work.type == 'movement' %}
             {{ wks.movement(work) }}
