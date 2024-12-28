@@ -1,4 +1,14 @@
 ---
+  - title: Hack
+    publisher: Visible Binary
+    type: published
+    label: 
+    url: https://www.visiblebinary.com/bo-hwang-hack
+    img: assets/images/pitiful_visiblebinary.jpg
+    caption: 
+    preview: Drying was not an act of will but an act of environment, being at odds with it. We took to odds easily, not wanting damp hair or cold wind. 
+    notes: Sept 2024
+
   - title: Slat
     publisher: Bombay Gin 
     type: published
@@ -6,7 +16,7 @@
     url: 
     img: assets/images/slopping.jpg
     caption: 
-    preview: with K. Blasco Soler
+    preview: with K. Blasco Soler, after Mahmoud Darwish
     notes: June 2024
   
   - title: She Did Not Sing
@@ -26,6 +36,24 @@
     caption: 
     preview: “We can never go back,” I said softly, offering her a mantra, an antidote for keeping memory at bay. Even now, I hold those words close to my body, low, against the liver<a href="https://readwildness.com/20/hwang-makon" class="ellipses-loader">...</a>
     notes: August 2019
+
+  - title: "Sound Museum, Counterpath" 
+    date: Nov 14, 2024
+    label: 
+    url: https://counterpathpress.org/reading-and-performance-featuring-poupeh-missaghis-sound-museum-with-bo-hwang-brian-alarcon-and-neshat-sadatmansoori-thursday-november-14-2024-7pm
+    venue: Counterpath
+    type: movement
+    img: assets/images/movement.jpg
+    details: "For the publication of Poupeh Missaghi's Sound Museum, a Theory Fiction (Coffee House Press, October 2024) a live sound performance by Brian Alarcon, Bo Hwang, Valerie Hsiung and Neshat Sadatmansoori"
+  
+  - title: "Poetry Project Workshop: 'Slow Drags :: Stray Physicalities'"
+    date: Nov 4, 2024
+    label: 
+    url: https://www.poetryproject.org/events/slow-drags-stray-physicalities-deep-study-session-with-saretta-morgan-bo-hwang
+    venue: 
+    type: movement
+    img: assets/images/slowdrags_03.png
+    details: "with Saretta Morgan"
 
   - title: carpet jaw [sūdjūd] with remy malik
     label:  
@@ -52,4 +80,6 @@
     type: movement
     img: assets/images/movement.jpg
     details: 
+
+ 
   
