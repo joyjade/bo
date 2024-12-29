@@ -153,14 +153,14 @@ section.info {
 section.info p {
   position: sticky;
   bottom: 0%;
-  padding: 1rem 1.25rem;
+  padding: 1rem 1.25rem 2rem;
   /* width: 90%; */
   width: 100%;
   /* max-width: 450px; */
   /* font-size: 1.25rem; */
   background-color: var(--bg-color);
-  margin: 1.5rem;
-  margin-right: 2rem;
+  /* margin: 1.5rem;
+  margin-right: 2rem; */
 }
 
 .bar {
