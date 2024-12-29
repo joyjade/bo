@@ -146,6 +146,8 @@ section.info {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 0;
 }
 
 section.info p {
@@ -228,6 +230,9 @@ section.info p {
   }
   section.work {
     display: inline-block;
+  }
+  section.info {
+    position: relative;
   }
 }
 
