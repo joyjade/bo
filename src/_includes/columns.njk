@@ -4,7 +4,7 @@
 <main data-view="columns">
   <section class="work">
     <ul class="published">
-      <li class="category">Writing</li>
+      <li class="category">Short Fiction, Poems</li>
       <div class="sticky"> 
         {% for work in works %}
           {% if work.type == 'published' %}
@@ -31,30 +31,18 @@
       </ul>
     {% else %}
       <ul>
-        <li class="category">Critical</li>
+        <li class="category">Projects</li>
         {% for work in works %}
-          {% if work.type == 'critical' %}
-            <li class="{{ work.classes }}">
-              {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
-              <p>
-                {{ work.title }}
-                <i>{{ work.pub_date }}, {{ work.publisher }}</i>
-              </p>
-            </li>
+          {% if work.type == 'project' %}
+              {{ wks.project(work) }}
           {% endif %}  
         {% endfor %}
       </ul>
       <ul>
-        <li class="category">Books</li>
+        <li class="category">Writing</li>
         {% for work in works %}
-          {% if work.type == 'books' %}
-            <li class="{{ work.classes }}">
-              {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
-              <p>
-                {{ work.title }}
-                <i>{{ work.pub_date }}, {{ work.publisher }}</i>
-              </p>
-            </li>
+          {% if work.type == 'book' %}
+             {{ wks.book(work) }}
           {% endif %}  
         {% endfor %}
       </ul>

@@ -17,11 +17,31 @@
 <li>
   {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
   <h3>
+    {% if work.label %}
+      <span class="label">{{ work.label}}</span>
+    {% endif %}  
+    {% if work.url %}
+      <a href="{{ work.url }}">{{ work.title }}, {{ work.venue }}</a>
+    {% else %}  
+      {{ work.title }}, {{ work.venue }}
+    {% endif %}  
+  </h3>
+  <p>
+    {{ work.date }} {% if work.details %}- {{ work.details | safe}}{% endif %}  
+  </p>
+</li>
+{% endmacro %}
+
+
+{% macro book(work)%}
+<li>
+  {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+  <h3>
     <span class="label">{{ work.label if work.label else work.date}}</span>
     {% if work.url %}
-      <a href="{{ work.url }}">{{ work.title }}</a>
+      <a href="{{ work.url }}">{{ work.title }}</a>, {{ work.publisher }}
     {% else %}  
-      {{ work.title }}
+      <i>{{ work.title }}</i>, {{ work.publisher }}
     {% endif %}  
   </h3>
   <p>
@@ -32,5 +52,26 @@
   </p> #}
 </li>
 {% endmacro %}
+
+{% macro project(work)%}
+<li>
+  {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+  <h3>
+    <span class="label">{{ work.label if work.label else work.date}}</span>
+    {% if work.url %}
+      <a href="{{ work.url }}">{{ work.title }}</a>, {{ work.publisher }}
+    {% else %}  
+      <i>{{ work.title }}</i>, {{ work.publisher }}
+    {% endif %}  
+  </h3>
+  <p>
+    {% if work.details %}{{ work.details | safe}}{% endif %}  
+  </p>
+  {# <p>
+    {{ work.date }}, {{ work.venue }}
+  </p> #}
+</li>
+{% endmacro %}
+
 
 

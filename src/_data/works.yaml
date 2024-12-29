@@ -1,4 +1,14 @@
 ---
+  # - title: day one
+  #   publisher: Bombay Gin 49
+  #   type: published
+  #   label: 
+  #   url: 
+  #   img: 
+  #   caption: 
+  #   preview: The tension between things that always were and my life finally happening is I can’t tell anyone, including my best friend. Bro, I say, the floods have sloshed me and my drive, officially making me a shut in. 
+  #   notes: June 2024
+
   - title: Hack
     publisher: Visible Binary
     type: published
@@ -8,13 +18,13 @@
     caption: 
     preview: Drying was not an act of will but an act of environment, being at odds with it. We took to odds easily, not wanting damp hair or cold wind. 
     notes: Sept 2024
-
+  
   - title: Slat
-    publisher: Bombay Gin 
+    publisher: "Bombay Gin: SLIT LOOM"
     type: published
     label: 
     url: 
-    img: assets/images/slopping.jpg
+    img: 
     caption: 
     preview: with K. Blasco Soler, after Mahmoud Darwish
     notes: June 2024
@@ -32,42 +42,42 @@
     publisher: Wildness
     type: published
     url: https://readwildness.com/20/hwang-makon
-    img: assets/images/banyantree_sometimesalways.jpg
+    img: 
     caption: 
     preview: “We can never go back,” I said softly, offering her a mantra, an antidote for keeping memory at bay. Even now, I hold those words close to my body, low, against the liver<a href="https://readwildness.com/20/hwang-makon" class="ellipses-loader">...</a>
     notes: August 2019
 
-  - title: "Poupeh Missaghi’s Sound Museum: A Live Sound Performance @ Counterpath" 
-    date: Nov 14, 2024
-    label: 
+  - title: "Sound Museum" 
+    date: 11.14.24
+    label: performance
     url: https://counterpathpress.org/reading-and-performance-featuring-poupeh-missaghis-sound-museum-with-bo-hwang-brian-alarcon-and-neshat-sadatmansoori-thursday-november-14-2024-7pm
     venue: Counterpath
     type: movement
     img: assets/images/soundmuseum.jpg
-    details: "by Brian Alarcon, Bo Hwang, Valerie Hsiung and Neshat Sadatmansoori"
+    details: "A sound and theater performance of Poupeh Missaghi’s <i>Sound Museum</i> (Coffee House Press 2024), a theory fiction, with Brian Alarcon, Valerie Hsiung and Neshat Sadatmansoori."
   
-  - title: "Workshop: Slow Drags :: Stray Physicalities"
-    date: Nov 4, 2024
-    label: 
+  - title: "Slow Drags :: Stray Physicalities"
+    date: 11.04.24
+    label: workshop
     url: https://www.poetryproject.org/events/slow-drags-stray-physicalities-deep-study-session-with-saretta-morgan-bo-hwang
-    venue: 
+    venue: The Poetry Project
     type: movement
     img: assets/images/slowdrags_03.png
-    details: "Deep Study Session @ The Poetry Project with Saretta Morgan "
+    details: "Deep Study Session with Saretta Morgan "
 
   - title: carpet jaw [sūdjūd] with remy malik
-    label:  
-    date: June 2024
+    label: 
+    date: 
     url: https://fivesquarterly.com/bo-hwang-remy-malik/
     venue: "F I V E S: Denver Quarterly"
     type: movement
     img: assets/images/sudjud_3.jpg
-    details: "F I V E S: Denver Quarterly"
+    details:
 
-  - title: Alt-Nature, Counterpath
-    date: March 2024
+  - title: Alt-Nature
+    date: 03.18.24
     url: 
-    label: 
+    label: performance
     venue: Counterpath
     type: movement
     img: assets/images/altnature.jpg
@@ -75,11 +85,34 @@
 
   - title: "Movement Workshops: slothing sleuthing, frantic assembly, body language, earthworks, blobjects in touch"
     date: Oct 2023 - May 2024
-    label: 
+    label: workshop
     venue: Naropa University
     type: movement
     img: assets/images/movement.jpg
     details: 
 
+  - title: abalone
+    date: 2025
+    label: forthcoming
+    publisher: Counterpath (2025)
+    type: project
+    img: assets/images/abalone_install.jpg
+    details: A poetry performance, object, and chapbook
+
+  - title: Night Laps
+    date: 2024
+    label: finalist
+    publisher: Wendy’s Subway
+    type: book
+    img: assets/images/pajeun.png
+    details: 2024 Open Reading Period, guest judged by Bhanu Kapil
+  
+  - title: Squat Practice
+    date: 2024
+    label: finalist
+    publisher: Essay Press Chapbook
+    type: book
+    img: assets/images/banyantree_sometimesalways.jpg
+    details: An essay-poem collection on tropical fecundity and density as coverage.
  
   

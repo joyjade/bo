@@ -144,7 +144,7 @@ section.info {
   /* width: 49%; */
   height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   position: sticky;
   top: 0;
@@ -152,11 +152,11 @@ section.info {
 
 section.info p {
   position: sticky;
-  top: 40%;
+  bottom: 0%;
   padding: 1rem 1.25rem;
   /* width: 90%; */
-  width: 90%;
-  max-width: 450px;
+  width: 100%;
+  /* max-width: 450px; */
   /* font-size: 1.25rem; */
   background-color: var(--bg-color);
   margin: 1.5rem;
