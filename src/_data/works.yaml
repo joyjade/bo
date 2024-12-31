@@ -117,20 +117,22 @@
     img: assets/images/abalone_install.jpg
     details: "A poetry performance, object, and chapbook, part of <i>Nightlaps</i>, a poetry book, and <i>Dross</i>, a series of objects and performances of makeshift passage: “Day by day, one makes of a broken wall a place to stand. That is how to cross the rubble, call a friend, kill time. What I don’t have time to tell you becomes physical and what is physical will bear the load. It has to.”"
 
+  
+  - title: Squat Practice
+    date: 2024
+    label: finalist
+    publisher: Essay Press
+    type: book
+    img: assets/images/banyantree_sometimesalways.jpg
+    details: An essay-poem collection on tropical fecundity and density as coverage, 2024 Chapbook Contest. 
+
   - title: Night Laps
     date: 2024
     label: finalist
     publisher: Wendy’s Subway
     type: book
-    img: assets/images/pajeun.png
-    details: 2024 Open Reading Period, guest judged by Bhanu Kapil
+    img: 
+    details: 2024 Open Reading Period judged by Bhanu Kapil.
   
-  - title: Squat Practice
-    date: 2024
-    label: finalist
-    publisher: Essay Press Chapbook
-    type: book
-    img: assets/images/banyantree_sometimesalways.jpg
-    details: An essay-poem collection on tropical fecundity and density as coverage.
  
   
