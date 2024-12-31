@@ -14,7 +14,7 @@
       </div>
       
     </ul>
-    <ul>
+    <ul class="perf-col">
       <li class="category">Movement, Performance, Teaching</li>
       {% for work in works %}
         {% if work.type == 'movement' %}
@@ -30,7 +30,7 @@
         <li class="category"> </li>
       </ul>
     {% else %}
-      <ul>
+      <ul class="proj-col">
         <li class="category">Projects</li>
         {% for work in works %}
           {% if work.type == 'project' %}
@@ -38,7 +38,7 @@
           {% endif %}  
         {% endfor %}
       </ul>
-      <ul>
+      <ul class="writ-col">
         <li class="category">Writing</li>
         {% for work in works %}
           {% if work.type == 'book' %}

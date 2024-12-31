@@ -153,7 +153,7 @@ section.info {
 section.info p {
   position: sticky;
   bottom: 0%;
-  padding: 1rem 1.25rem 2rem;
+  padding: 1rem 1.25rem;
   /* width: 90%; */
   width: 100%;
   /* max-width: 450px; */
@@ -229,8 +229,15 @@ section.info p {
     --font-size: 1.2rem;
   }
   section.work {
-    display: inline-block;
+    /* display: inline-block; */
+    display: flex;
+    flex-flow: column;
   }
+  .proj-col { order: 1;}
+  .perf-col { order: 3;}
+  .writ-col { order: 2;}
+  ul.published { order: 4;}
+
   section.info {
     position: relative;
   }

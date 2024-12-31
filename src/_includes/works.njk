@@ -21,13 +21,15 @@
       <span class="label">{{ work.label}}</span>
     {% endif %}  
     {% if work.url %}
-      <a href="{{ work.url }}">{{ work.title }}, {{ work.venue }}</a>
+      <a href="{{ work.url }}">{{ work.title }}</a>
     {% else %}  
-      {{ work.title }}, {{ work.venue }}
+      {{ work.title }}
     {% endif %}  
   </h3>
   <p>
-    {{ work.date }} {% if work.details %}- {{ work.details | safe}}{% endif %}  
+    {{ work.date }}{% if work.venue and work.date %} | {% endif %}
+    {% if work.venue %} {{ work.venue }} {% endif %} 
+    {% if work.details %}- {{ work.details | safe}}{% endif %}  
   </p>
 </li>
 {% endmacro %}
