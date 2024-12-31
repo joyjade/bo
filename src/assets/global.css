@@ -147,7 +147,7 @@ img:hover {
 section.info {
   position: fixed;
   background-color: var(--bg-color);
-  width: calc(50vw - 15px);
+  width: 50%;
   /* position: relative; */
   /* grid-column: 3 / 5;
   grid-row: 1 / 3; */
