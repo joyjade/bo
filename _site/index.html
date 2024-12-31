@@ -405,14 +405,32 @@
           <a href="https://www.instagram.com/bohwang__/" target="_blank">@bohwang__</a>
         </div>
       </div>
-      
+      <div class="item">
+        <div class="more credits">
+          <span>credits</span>
+        </div>
+        <div class="expansion credits hide">
+          <span>The image above <i>Squat Practice</i> was created by <a href='https://sometimes-always.com/' target='_blank'>Sometimes Always</a> for <a href='https://publicrecords.nyc/' target='_blank'>Public Record</a>’s launch of The Nursery. All other images are from the artist, venue or publisher, and friends.</span>
+        </div>
+      </div>
     </div>
   </section>
 
 </main>
 
 <script type="text/javascript">
-  
+  let more = document.querySelector('.more');
+
+  more.addEventListener("click", function (e) {
+    let el=e.currentTarget;
+    let ex=el.nextElementSibling;
+    
+
+    if(!ex.classList.contains('hide')){
+        ex.classList.add('hide');
+    }else{
+        ex.classList.remove('hide');
+    }  
   });
 </script>
 

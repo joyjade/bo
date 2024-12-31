@@ -58,30 +58,32 @@
           <a href="https://www.instagram.com/bohwang__/" target="_blank">@bohwang__</a>
         </div>
       </div>
-      {# <div class="item">
-        <div class="more credits" data-text="The image above <i>Squat Practice</i> was created by <a href='https://sometimes-always.com/' target='_blank'>Sometimes Always</a> for <a href='https://publicrecords.nyc/' target='_blank'>Public Record</a>’s launch of The Nursery. All other images are by artist and friends.">
+      <div class="item">
+        <div class="more credits">
           <span>credits</span>
         </div>
-      </div> #}
+        <div class="expansion credits hide">
+          <span>The image above <i>Squat Practice</i> was created by <a href='https://sometimes-always.com/' target='_blank'>Sometimes Always</a> for <a href='https://publicrecords.nyc/' target='_blank'>Public Record</a>’s launch of The Nursery. All other images are from the artist, venue or publisher, and friends.</span>
+        </div>
+      </div>
     </div>
   </section>
 
 </main>
 
 <script type="text/javascript">
-  {# let more = document.querySelector('.more');
+  let more = document.querySelector('.more');
 
   more.addEventListener("click", function (e) {
     let el=e.currentTarget;
-    let html=el.querySelector('span');
+    let ex=el.nextElementSibling;
+    {# let bar=el.parentElement.parentElement; #}
 
-    if(!el.classList.contains('open')){
-        el.classList.add('open');
-        html.innerHTML=el.dataset.text;
+    if(!ex.classList.contains('hide')){
+        ex.classList.add('hide');
     }else{
-      el.classList.remove('open');
-      html.innerText='credits';
-    }   #}
+        ex.classList.remove('hide');
+    }  
   });
 </script>
 {% endmacro %}

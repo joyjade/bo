@@ -32,7 +32,6 @@
 }
 
 body {
-  /* max-height: 100dvh; */
   width: 100vw;
   max-width: 100vw;
   overflow-x: hidden;
@@ -43,7 +42,7 @@ main {
   font-family: 'junicode';
   font-size: var(--font-size);
   display: grid;
-  grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr) 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr auto;
 }
 
@@ -148,7 +147,7 @@ img:hover {
 section.info {
   position: fixed;
   background-color: var(--bg-color);
-  width: 49vw;
+  width: calc(50vw - 15px);
   /* position: relative; */
   /* grid-column: 3 / 5;
   grid-row: 1 / 3; */
@@ -160,6 +159,7 @@ section.info {
   bottom: 0;
   right: 0;
   display: flex;
+  z-index: 10;
 }
 
 section.info p {
@@ -176,9 +176,12 @@ section.info p {
 }
 
 .bar {
+  box-sizing: border-box;
+  float: right;
   display: flex;
   box-sizing: border-box;
-
+  margin: 0.3rem;
+  margin-right: 0.1rem;
 }
 
 .item .link, .credits {
@@ -186,6 +189,17 @@ section.info p {
   padding: 0.25rem 0.5rem;
   border: 1px solid var(--bg-color);
   margin-right: 0.25rem;
+}
+
+.credits.expansion {
+  position: absolute;
+  top: -42px;
+  left: -8px;
+  right: 8px;
+}
+
+.credits.expansion.hide {
+  display: none;
 }
 
 .item a, .item {
@@ -214,9 +228,27 @@ section.info p {
     flex-flow: column-reverse;
     margin-bottom: 5rem;
   }
+
   section.info {
-    height: auto;
+    position: relative;
+    width: 100vw;
   }
+
+  .bar {
+    float: unset;
+  }
+
+  .credits.expansion {
+    top: 40px;
+    left: 30%;
+    right: 0;
+  }
+
+  .writ-col { order: 1;}
+  .proj-col { order: 2;}
+  .perf-col { order: 4;}
+  .published { order: 3;}
+
   section.info p {
     position: relative;
     margin: 0;
@@ -224,12 +256,9 @@ section.info p {
     padding: 0.5rem 0.5rem 2rem;
     max-width: 100%;
   }
-  .placeholder {
+  /* .placeholder {
     display: none;
-  }
-  .item {
-    padding: 2px 6px;
-  }
+  } */
 }
 
 @media (max-width: 450px)  {
@@ -241,7 +270,6 @@ section.info p {
     filter: grayscale(0%);
   }
   section.work {
-    /* display: inline-block; */
     display: flex;
     flex-flow: column;
   }
@@ -251,8 +279,6 @@ section.info p {
   .published { order: 4;}
 
   section.info {
-    position: relative;
-    width: 100vw;
     margin-bottom:-1px;
   }
 
@@ -261,8 +287,14 @@ section.info p {
     bottom: 0;
     right: 0;
     margin: 0.5rem;
-    
   }
+
+  .expansion.credits {
+    position: absolute;
+    top: -102px;
+    left: -33vw;
+    right: 0vw;
+  } 
 }
 
 /*----------Courtesy of Jon Gacnik https://jongacnik.com/text/ellipses-loader ---------*/
