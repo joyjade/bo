@@ -4,7 +4,7 @@
 <main data-view="columns">
   <section class="work">
     <ul class="published">
-      <li class="category">Writing</li>
+      <li class="category">Short Fiction, Poems</li>
       <div class="sticky"> 
         {% for work in works %}
           {% if work.type == 'published' %}
@@ -14,8 +14,8 @@
       </div>
       
     </ul>
-    <ul>
-      <li class="category">Movement, Performance, Teaching</li>
+    <ul class="perf-col">
+      <li class="category">Movement, Performance, Workshop</li>
       {% for work in works %}
         {% if work.type == 'movement' %}
             {{ wks.movement(work) }}
@@ -30,31 +30,19 @@
         <li class="category"> </li>
       </ul>
     {% else %}
-      <ul>
-        <li class="category">Critical</li>
+      <ul class="proj-col">
+        <li class="category">Projects</li>
         {% for work in works %}
-          {% if work.type == 'critical' %}
-            <li class="{{ work.classes }}">
-              {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
-              <p>
-                {{ work.title }}
-                <i>{{ work.pub_date }}, {{ work.publisher }}</i>
-              </p>
-            </li>
+          {% if work.type == 'project' %}
+              {{ wks.project(work) }}
           {% endif %}  
         {% endfor %}
       </ul>
-      <ul>
-        <li class="category">Books</li>
+      <ul class="writ-col">
+        <li class="category">Writing</li>
         {% for work in works %}
-          {% if work.type == 'books' %}
-            <li class="{{ work.classes }}">
-              {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
-              <p>
-                {{ work.title }}
-                <i>{{ work.pub_date }}, {{ work.publisher }}</i>
-              </p>
-            </li>
+          {% if work.type == 'book' %}
+             {{ wks.book(work) }}
           {% endif %}  
         {% endfor %}
       </ul>
@@ -64,24 +52,24 @@
 
   <section class="info">
     <p>{{ bio | safe }}</p>
+    <div class="bar">
+      <div class="item">
+        <div class="link">
+          <a href="https://www.instagram.com/bohwang__/" target="_blank">@bohwang__</a>
+        </div>
+      </div>
+      {# <div class="item">
+        <div class="more credits" data-text="The image above <i>Squat Practice</i> was created by <a href='https://sometimes-always.com/' target='_blank'>Sometimes Always</a> for <a href='https://publicrecords.nyc/' target='_blank'>Public Record</a>’s launch of The Nursery. All other images are by artist and friends.">
+          <span>credits</span>
+        </div>
+      </div> #}
+    </div>
   </section>
 
-  <div class="bar">
-    <div class="item">
-      <div class="link">
-        <a href="https://www.instagram.com/bohwang__/" target="_blank">@bohwang__</a>
-      </div>
-    </div>
-    <div class="item">
-      <div class="more credits" data-text="The image above ‘Visit to Makon’ was created by <a href='https://sometimes-always.com/' target='_blank'>Sometimes Always</a> for <a href='https://publicrecords.nyc/' target='_blank'>Public Record</a>’s launch of The Nursery. All other images are by artist and friends.">
-        <span>credits</span>
-      </div>
-    </div>
-  </div>
 </main>
 
 <script type="text/javascript">
-  let more = document.querySelector('.more');
+  {# let more = document.querySelector('.more');
 
   more.addEventListener("click", function (e) {
     let el=e.currentTarget;
@@ -93,7 +81,7 @@
     }else{
       el.classList.remove('open');
       html.innerText='credits';
-    }  
+    }   #}
   });
 </script>
 {% endmacro %}
