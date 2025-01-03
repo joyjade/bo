@@ -290,10 +290,11 @@ section.info p {
   }
 
   .expansion.credits {
+    width: 90vw;
     position: absolute;
-    top: -102px;
-    left: -33vw;
-    right: 0vw;
+    top: -341%;
+    right: 0;
+    left: auto;
   } 
 }
 
