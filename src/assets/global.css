@@ -50,9 +50,9 @@ section.work {
   display: grid;
   grid-column: 1 / 5;
   grid-row: 1 / 3;
+  position: relative;
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
-  position: relative;
 }
 
 .sticky {
@@ -137,51 +137,78 @@ img {
   filter: grayscale(100%);
 }
 
-img:hover {
+li:hover img{
   filter: grayscale(0%);
+}
+
+/* img.thumb {
+  width: 50%;
+} */
+
+/* img.cover {
+  width: 80%;
+} */
+
+.published li.category {
+  margin-bottom: 0.5rem;
 }
 
 
 /* info */
 
 section.info {
-  position: fixed;
+  position: fixed; 
   background-color: var(--bg-color);
-  width: 50%;
+  grid-column: 4 / 5;
+
   /* position: relative; */
-  /* grid-column: 3 / 5;
-  grid-row: 1 / 3; */
-  /* height: 100vh;
-  display: flex;
+  /* grid-row: 1 / 3; */
+  /* height: 100vh; */
   align-items: flex-end;
   justify-content: center;
-  position: sticky; */
-  bottom: 0;
-  right: 0;
-  display: flex;
+  top: 1.8rem;
+  margin: 1rem;
+  /* bottom: 0;
+  right: 0; */
+  /* display: flex; */
   z-index: 10;
+  max-width: calc(25vw - 40px);
 }
 
 section.info p {
   padding: 0.75rem 0.75rem 0.5rem 1rem;
-  flex-grow: 1;;
-  /* position: sticky;
+  /* flex-grow: 1;;
+  position: sticky;
   bottom: 0%; */
   /* width: 90%; */
   /* width: 100%; */
   /* max-width: 450px; */
   /* font-size: 1.25rem; */
-  
   /* margin: 0.5rem; */
+}
+
+
+/* forever fuck safari */
+@supports not (grid-template-columns: subgrid) {
+  section.work {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr auto;
+  }
+
+  section.info {
+    width: calc(25vw - 50px);
+    right: 0;
+  }
 }
 
 .bar {
   box-sizing: border-box;
-  float: right;
+  /* float: right; */
   display: flex;
   box-sizing: border-box;
-  margin: 0.3rem;
+  margin: 0.5rem;
   margin-right: 0.1rem;
+  flex-wrap: wrap;
 }
 
 .item .link, .credits {
@@ -193,9 +220,8 @@ section.info p {
 
 .credits.expansion {
   position: absolute;
-  top: -42px;
-  left: -8px;
-  right: 8px;
+  top: 110%;
+  left: 0;
 }
 
 .credits.expansion.hide {
@@ -228,10 +254,25 @@ section.info p {
     flex-flow: column-reverse;
     margin-bottom: 5rem;
   }
+  
+  @supports not (grid-template-columns: subgrid) {
+    section.work {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+  }
+
+  .proj-col { order: 1;}
+  .perf-col { order: 2;} 
+  .published { order: 3;}
+  .writ-col { order: 4;}
 
   section.info {
     position: relative;
     width: 100vw;
+    margin: 0;
+    top: 0;
+    max-width: 100%;
   }
 
   .bar {
@@ -244,17 +285,12 @@ section.info p {
     right: 0;
   }
 
-  .writ-col { order: 1;}
-  .proj-col { order: 2;}
-  .perf-col { order: 4;}
-  .published { order: 3;}
-
   section.info p {
-    position: relative;
+    /* position: relative;
     margin: 0;
     width: 100%;
+    max-width: 100%; */
     padding: 0.5rem 0.5rem 2rem;
-    max-width: 100%;
   }
   /* .placeholder {
     display: none;
@@ -296,6 +332,10 @@ section.info p {
     right: 0;
     left: auto;
   } 
+
+  img.thumb {
+    width: 100%;
+  }
 }
 
 /*----------Courtesy of Jon Gacnik https://jongacnik.com/text/ellipses-loader ---------*/

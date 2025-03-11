@@ -1,13 +1,23 @@
 ---
-  # - title: day one
-  #   publisher: Bombay Gin 49
-  #   type: published
-  #   label: 
-  #   url: 
-  #   img: 
-  #   caption: 
-  #   preview: The tension between things that always were and my life finally happening is I can’t tell anyone, including my best friend. Bro, I say, the floods have sloshed me and my drive, officially making me a shut in. 
-  #   notes: June 2024
+  - title: CALYPSO
+    publisher: Piss Press
+    type: published
+    label: forthcoming
+    url: 
+    img: 
+    caption: 
+    preview: When I took Na in, my dirt floor, I washed her hair with my mouth. What nefarious thick skin we had on, from our high immunity, from sucking every dish down.
+    notes: 2025
+  
+  - title: day one
+    publisher: Bombay Gin 49
+    type: published
+    label: forthcoming
+    url: 
+    img: 
+    caption: 
+    preview: The tension between things that always were and my life finally happening is I can’t tell anyone, including my best friend. Bro, I say, the floods have sloshed me and my drive, officially making me a shut in. 
+    notes: June 2025
 
   - title: Hack
     publisher: Visible Binary
@@ -15,6 +25,7 @@
     label: 
     url: https://www.visiblebinary.com/bo-hwang-hack
     img: assets/images/pitiful_visiblebinary.jpg
+    imgopt: thumb
     caption: 
     preview: Drying was not an act of will but an act of environment, being at odds with it. We took to odds easily, not wanting damp hair or cold wind<a href="https://www.visiblebinary.com/bo-hwang-hack" class="ellipses-loader">...</a> 
     notes: Sept 2024
@@ -42,11 +53,22 @@
     publisher: Wildness
     type: published
     url: https://readwildness.com/20/hwang-makon
-    img: 
+    img: assets/images/banyantree_sometimesalways.jpg
     caption: 
     preview: “We can never go back,” I said softly, offering her a mantra, an antidote for keeping memory at bay. Even now, I hold those words close to my body, low, against the liver<a href="https://readwildness.com/20/hwang-makon" class="ellipses-loader">...</a>
     notes: August 2019
 
+  - title: "double dutch with remy malik" 
+    date: April 20 -26, 2025
+    label: residency
+    url: 
+    venue: Counterpath
+    type: movement
+    img: assets/images/doubledutch.jpg
+    imgopt: thumb
+    details: A choreopoem of - Objectivity in 3 Acts (4 if you’re paying attention) - Another present moves alongside the present expropriated from (us).
+
+  
   - title: "amplifies it, doubles, trebles it"
     date: 01.11.25
     label: performance
@@ -114,23 +136,25 @@
     label: forthcoming
     publisher: Counterpath (2025)
     type: project
-    img: assets/images/abalone_install.jpg
-    details: "A poetry performance, object, and chapbook, part of <i>Nightlaps</i>, a poetry book, and <i>Dross</i>, a series of objects and performances of makeshift passage: “Day by day, one makes of a broken wall a place to stand. That is how to cross the rubble, call a friend, kill time. What I don’t have time to tell you becomes physical and what is physical will bear the load. It has to.”"
+    img: assets/images/abalone_cover.jpg
+    imgopt: cover
+    url: https://counterpathpress.org/abalonebo-hwang
+    details: 'A poetry performance, object, and chapbook. <br/> “Day by day, one makes of a broken wall a place to stand. That is how to cross the rubble, call a friend, kill time. What I don’t have time to tell you becomes physical and what is physical will bear the load. It has to.” <a href="https://asterismbooks.com/product/abalone-bo-hwang">Preorder chapbook here ↗</a>'
 
   
   - title: Squat Practice
     date: 2024
     label: finalist
     publisher: Essay Press
-    type: book
-    img: assets/images/banyantree_sometimesalways.jpg
+    type: project
+    img: 
     details: An essay-poem collection on tropical fecundity and density as coverage, 2024 Chapbook Contest. 
 
   - title: Nightlaps
     date: 2024
     label: finalist
     publisher: Wendy’s Subway
-    type: book
+    type: project
     img: 
     details: 2024 Open Reading Period judged by Bhanu Kapil.
   

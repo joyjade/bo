@@ -1,7 +1,7 @@
 {% macro published(work)%}
 <li>
   {% if work.url %}<a href="{{ work.url }}" target="_blank">{% endif %}  
-    {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+    {% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
     <h3>
       {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
       <span class="highlight">{{ work.title }}<span>, <i>{{ work.publisher }}</i>
@@ -15,7 +15,7 @@
 
 {% macro movement(work)%}
 <li>
-  {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+  {% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
   <h3>
     {% if work.label %}
       <span class="label">{{ work.label}}</span>
@@ -37,7 +37,7 @@
 
 {% macro book(work)%}
 <li>
-  {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+  {% if work.img %}<img class="{{ work.imgopt }}"  src="/{{ work.img }}">{% endif %}  
   <h3>
     <span class="label">{{ work.label if work.label else work.date}}</span>
     {% if work.url %}
@@ -57,7 +57,7 @@
 
 {% macro project(work)%}
 <li>
-  {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+  {% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
   <h3>
     <span class="label">{{ work.label if work.label else work.date}}</span>
     {% if work.url %}

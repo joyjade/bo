@@ -4,15 +4,12 @@
 <main data-view="columns">
   <section class="work">
     <ul class="published">
-      <li class="category">Short Fiction, Poems</li>
-      <div class="sticky"> 
+      <li class="category">Short Fiction, Poems</li> 
         {% for work in works %}
           {% if work.type == 'published' %}
             {{ wks.published(work) }}
           {% endif %}  
         {% endfor %}
-      </div>
-      
     </ul>
     <ul class="perf-col">
       <li class="category">Movement, Performance, Workshop</li>
@@ -31,15 +28,17 @@
       </ul>
     {% else %}
       <ul class="proj-col">
-        <li class="category">Projects</li>
+        <li class="category">Writing, Projects</li>
+        <div class="sticky">
         {% for work in works %}
           {% if work.type == 'project' %}
               {{ wks.project(work) }}
           {% endif %}  
         {% endfor %}
+        </div>
       </ul>
       <ul class="writ-col">
-        <li class="category">Writing</li>
+        <li class="category"></li>
         {% for work in works %}
           {% if work.type == 'book' %}
              {{ wks.book(work) }}
@@ -68,7 +67,7 @@
           <span>credits</span>
         </div>
         <div class="expansion credits hide">
-          <span>The image above <i>Squat Practice</i> was created by <a href='https://sometimes-always.com/' target='_blank'>Sometimes Always</a> for <a href='https://publicrecords.nyc/' target='_blank'>Public Record</a>’s launch of The Nursery. All other images are from the artist, venue or publisher, and friends.</span>
+          <span>The image above <i>Visit to Makon</i> was created by <a href='https://sometimes-always.com/' target='_blank'>Sometimes Always</a> for <a href='https://publicrecords.nyc/' target='_blank'>Public Record</a>’s launch of The Nursery. All other images are from the artist, venue or publisher, and friends.</span>
         </div>
       </div>
     </div>
