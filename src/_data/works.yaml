@@ -1,4 +1,14 @@
 ---
+  - title: alhambra
+    publisher: Club Rambutan
+    type: published
+    label: forthcoming
+    url: 
+    img: 
+    caption: 
+    preview: once he held his sister while a wave barreled overhead </br> unable to detect when to stand </br> she became vertiginous and indistinct </br> until his torso leaned into hers </br> and the shore reappeared
+    notes: 2025
+  
   - title: CALYPSO
     publisher: Piss Press
     type: published
@@ -12,7 +22,7 @@
   - title: day one
     publisher: Bombay Gin 49
     type: published
-    label: forthcoming
+    label: 
     url: 
     img: 
     caption: 
@@ -131,10 +141,18 @@
     img: assets/images/movement.jpg
     details: 
 
+  - title: yearly in the old pool
+    date: Aug 2025
+    publisher: Sister C Press
+    type: project
+    img: assets/images/yearly.jpg
+    imgopt: cover
+    url: 
+    details: 'A poetry performance, object, and chapbook. <br/> “Day by day, one makes of a broken wall a place to stand. That is how to cross the rubble, call a friend, kill time. What I don’t have time to tell you becomes physical and what is physical will bear the load. It has to.” <a href="https://asterismbooks.com/product/abalone-bo-hwang">Preorder chapbook here ↗</a>'
+
   - title: abalone
-    date: 2025
-    label: forthcoming
-    publisher: Counterpath (2025)
+    date: March 2025
+    publisher: Counterpath
     type: project
     img: assets/images/abalone_cover.jpg
     imgopt: cover
