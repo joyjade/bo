@@ -1,7 +1,7 @@
 {% macro published(work)%}
 <li>
   {% if work.url %}<a href="{{ work.url }}" target="_blank">{% endif %}  
-    {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+    {% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
     <h3>
       {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
       <span class="highlight">{{ work.title }}<span>, <i>{{ work.publisher }}</i>
@@ -15,18 +15,53 @@
 
 {% macro movement(work)%}
 <li>
-  {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
+  {% if work.url %}
+    <a href="{{ work.url }}">
+  {% endif %} 
+  {% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
   <h3>
-    {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
+    {% if work.label %}
+      <span class="label">{{ work.label}}</span>
+    {% endif %}  
     <a href="/works/{{work.title | slug}}">{{ work.title }}</a>
+  </h3>
+  <p>
+    {{ work.date }}{% if work.venue and work.date %} | {% endif %}
+    {% if work.venue %} {{ work.venue }} {% endif %} 
+    {% if work.details %}- {{ work.details | safe}}{% endif %}  
+  </p>
+  </a>
+</li>
+{% endmacro %}
+
+
+{% macro book(work)%}
+<li>
+  {% if work.img %}<img class="{{ work.imgopt }}"  src="/{{ work.img }}">{% endif %}  
+  <h3>
+    <span class="label">{{ work.label if work.label else work.date}}</span>
+    <a href="/works/{{work.title | slug}}"> <i>{{ work.title }}</i>, {{ work.publisher }}</a>
   </h3>
   <p>
     {% if work.details %}{{ work.details | safe}}{% endif %}  
   </p>
-  {# <p>
-    {{ work.date }}, {{ work.venue }}
-  </p> #}
 </li>
 {% endmacro %}
+
+{% macro project(work)%}
+<li>
+  {% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
+  <h3>
+    {% if work.label %}
+      <span class="label">{{ work.label}}</span>
+    {% endif %}  
+    <a href="/works/{{work.title | slug}}">{{ work.title }}</a>, {{ work.publisher }}, {{work.date}}
+  </h3>
+  <p>
+    {% if work.details %}{{ work.details | safe}}{% endif %}  
+  </p>
+</li>
+{% endmacro %}
+
 
 

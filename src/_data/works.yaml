@@ -1,12 +1,53 @@
 ---
-  - title: Slat
-    publisher: Bombay Gin
+  - title: alhambra
+    publisher: Club Rambutan
     type: published
     label: forthcoming
     url: 
-    img: assets/images/slopping.jpg
+    img: 
     caption: 
-    preview: with K. Blasco Soler
+    preview: once he held his sister while a wave barreled overhead </br> unable to detect when to stand </br> she became vertiginous and indistinct </br> until his torso leaned into hers </br> and the shore reappeared
+    notes: 2025
+  
+  - title: CALYPSO
+    publisher: Piss Press
+    type: published
+    label: forthcoming
+    url: 
+    img: 
+    caption: 
+    preview: When I took Na in, my dirt floor, I washed her hair with my mouth. What nefarious thick skin we had on, from our high immunity, from sucking every dish down.
+    notes: 2025
+  
+  - title: day one
+    publisher: Bombay Gin 49
+    type: published
+    label: 
+    url: 
+    img: 
+    caption: 
+    preview: The tension between things that always were and my life finally happening is I can’t tell anyone, including my best friend. Bro, I say, the floods have sloshed me and my drive, officially making me a shut in. 
+    notes: June 2025
+
+  - title: Hack
+    publisher: Visible Binary
+    type: published
+    label: 
+    url: https://www.visiblebinary.com/bo-hwang-hack
+    img: assets/images/pitiful_visiblebinary.jpg
+    imgopt: thumb
+    caption: 
+    preview: Drying was not an act of will but an act of environment, being at odds with it. We took to odds easily, not wanting damp hair or cold wind<a href="https://www.visiblebinary.com/bo-hwang-hack" class="ellipses-loader">...</a> 
+    notes: Sept 2024
+  
+  - title: Slat
+    publisher: "Bombay Gin: SLIT LOOM"
+    type: published
+    label: 
+    url: 
+    img: 
+    caption: 
+    preview: with K. Blasco Soler, after Mahmoud Darwish
     notes: June 2024
   
   - title: She Did Not Sing
@@ -27,26 +68,123 @@
     preview: “We can never go back,” I said softly, offering her a mantra, an antidote for keeping memory at bay. Even now, I hold those words close to my body, low, against the liver<a href="https://readwildness.com/20/hwang-makon" class="ellipses-loader">...</a>
     notes: August 2019
 
+  - title: "inch or I can barely move moving" 
+    date: Sept 26, 2025
+    label: performance
+    url: 
+    venue: Leon Gallery
+    type: movement
+    img: assets/images/inch.jpg
+    imgopt: thumb
+    details: A solitary movement work of the body that figures and the body as composite. Inching and itching, physicalities make and lose sense of the room we’re in, “disaster, the long cell of it” (Force Drift, Jeffrey Pethybridge).
+
+  - title: "double dutch with remy malik" 
+    date: April 20 -26, 2025
+    label: residency
+    url: https://counterpathpress.org/residency-bo-hwang-and-remi-malik-april-21-through-april-25-2025-closing-event-saturday-april-26-730pm
+    venue: Counterpath
+    type: movement
+    img: assets/images/doubledutch.jpg
+    imgopt: thumb
+    details: A choreopoem of - Objectivity in 3 Acts (4 if you’re paying attention) - Another present moves alongside the present expropriated from (us). <a href="https://counterpathpress.org/residency-bo-hwang-and-remi-malik-april-21-through-april-25-2025-closing-event-saturday-april-26-730pm">View event ↗</a> 
+
+  
+  - title: "amplifies it, doubles, trebles it"
+    date: 01.11.25
+    label: performance
+    url: https://www.sitesantafe.org/en/events/amplifies-it-doubles-trebles-it/
+    venue: SITE Santa Fe
+    type: movement
+    img: assets/images/trebles.webp
+    details: Site-specific, multimedia performance series by kelechi agwuncha featuring transgenre, experimental sound artists, and performers. Also featuring Chuquimamani-Condori, Ryan Dennison and Ibrahima Fofana. <a href="https://www.sitesantafe.org/en/events/amplifies-it-doubles-trebles-it/">View event ↗</a> 
+  
+  - title: "Sound Museum" 
+    date: 11.14.24
+    label: performance
+    url: https://counterpathpress.org/reading-and-performance-featuring-poupeh-missaghis-sound-museum-with-bo-hwang-brian-alarcon-and-neshat-sadatmansoori-thursday-november-14-2024-7pm
+    venue: Counterpath
+    type: movement
+    img: assets/images/soundmuseum.jpg
+    details: "A sound and theater performance of Poupeh Missaghi’s <i>Sound Museum</i> (Coffee House Press 2024), a theory fiction, with Brian Alarcon, Valerie Hsiung and Neshat Sadatmansoori."
+  
+  - title: "Slow Drags :: Stray Physicalities"
+    date: 11.04.24
+    label: workshop
+    url: https://www.poetryproject.org/events/slow-drags-stray-physicalities-deep-study-session-with-saretta-morgan-bo-hwang
+    venue: The Poetry Project
+    type: movement
+    img: assets/images/slowdrags_03.png
+    details: "Deep Study Session with Saretta Morgan "
+
+  - title: FATELESSNESS ON THE MEND, FATELESSNESS ON THE LAM 
+    date: 05.08.24
+    label: performance
+    url: https://counterpathpress.org/fatelessness-on-the-mend-fatelessness-on-the-lam-a-poetry-performance-and-choreo-chorus-by-valerie-hsiung-body-and-voice-by-valerie-hsiung-shreeya-shrestha-ben-claus-and-bo-hwang-wednesday
+    venue: Counterpath
+    type: movement
+    img: assets/images/fatelessness.jpg
+    details: A poetry performance and choreo-chorus by Valerie Hsiung, with Ben Claus and Shreeya Shrestha
+
+  - title: carpet jaw [sūdjūd] with remy malik
+    label: "video"
+    date: 
+    url: https://fivesquarterly.com/bo-hwang-remy-malik/
+    venue: "F I V E S: Denver Quarterly"
+    type: movement
+    img: assets/images/sudjud_3.jpg
+    details:
+
   - title: Alt-Nature
-    date: Monday, March 18 2024
-    label: 
+    date: 03.18.24
+    url: 
+    label: performance
     venue: Counterpath
     type: movement
     img: assets/images/altnature.jpg
-    details: In celebration of Saretta Morgan’s book release, <i>Alt-Nature</i> from Coffee House Press, a performance with remy malik and Brian Alarcon.
+    details: In celebration of Saretta Morgan’s book release, <i>Alt-Nature</i> from Coffee House Press, a performance with remy malik and Brian Alarcon. <a href="https://vimeo.com/939423346" target="_blank">Watch here.</a>
 
-  - title: "Movement Workshops: slothing sleuthing, frantic assembly, body language, earthworks, blobjects in touch"
+  - title: "Movement Workshops: slothing sleuthing, frantic assembly, body language, earthworks, blobjects in touch."
     date: Oct 2023 - May 2024
-    label: 
+    label: workshop
     venue: Naropa University
     type: movement
     img: assets/images/movement.jpg
     details: 
+
+  - title: yearly in the old pool
+    date: Aug 2025
+    publisher: Sister C Press
+    type: project
+    img: assets/images/yearly.jpg
+    imgopt: cover
+    url: 
+    details: 'An artist book. Vellum, blue ink, bead and string, cardstock folder, blue ink.<br/> “We are all slingers in our own right </br> It can look anyway anyone wants </br> Everytime the dropped will know”'
+
+  - title: abalone
+    date: March 2025
+    publisher: Counterpath
+    type: project
+    img: assets/images/abalone_cover.jpg
+    imgopt: cover
+    url: https://counterpathpress.org/abalonebo-hwang
+    details: 'A poetry performance, object, and chapbook. <br/> “Day by day, one makes of a broken wall a place to stand. That is how to cross the rubble, call a friend, kill time. What I don’t have time to tell you becomes physical and what is physical will bear the load. It has to.” <a href="https://asterismbooks.com/product/abalone-bo-hwang">Preorder chapbook here ↗</a>'
+
   
-  - title: carpet jaw [sūdjūd] with remy malik
-    label: forthcoming 
-    date: July 2023
-    venue: "F I V E S: Denver Quarterly"
-    type: movement
-    img: assets/images/sudjud_3.jpg
-    details: "F I V E S: Denver Quarterly (Spring 2024)"
+  - title: Squat Practice
+    date: 2024
+    label: finalist
+    publisher: Essay Press
+    type: project
+    img: 
+    details: An essay-poem collection on tropical fecundity and density as coverage, 2024 Chapbook Contest. 
+
+  - title: Nightlaps
+    date: 2024
+    label: finalist
+    publisher: Wendy’s Subway
+    type: project
+    img: 
+    details: 2024 Open Reading Period judged by Bhanu Kapil.
+  
+ 
+  

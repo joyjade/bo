@@ -9,18 +9,15 @@ layout: base.njk
 <main data-view="columns">
   <section class="work">
     <ul class="published">
-      <li class="category">Shorts</li>
-      <div class="sticky"> 
+      <li class="category">Short Fiction, Poems</li> 
         {% for work in works %}
           {% if work.type == 'published' %}
             {{ wks.published(work) }}
           {% endif %}  
         {% endfor %}
-      </div>
-      
     </ul>
-    <ul>
-      <li class="category">Movement</li>
+    <ul class="perf-col">
+      <li class="category">Movement, Performance, Workshop</li>
       {% for work in works %}
         {% if work.type == 'movement' %}
             {{ wks.movement(work) }}
@@ -35,31 +32,22 @@ layout: base.njk
         <li class="category"> </li>
       </ul>
     {% else %}
-      <ul>
-        <li class="category">*</li>
+      <ul class="proj-col">
+        <li class="category">Writing, Projects</li>
+        <div>
+        {# <div class="sticky"> #}
         {% for work in works %}
-          {% if work.type == 'critical' %}
-            <li class="{{ work.classes }}">
-              {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
-              <p>
-                {{ work.title }}
-                <i>{{ work.pub_date }}, {{ work.publisher }}</i>
-              </p>
-            </li>
+          {% if work.type == 'project' %}
+              {{ wks.project(work) }}
           {% endif %}  
         {% endfor %}
+        </div>
       </ul>
-      <ul>
-        <li class="category"><a href="/">Back</a></li>
+      <ul class="writ-col">
+        <li class="category"></li>
         {% for work in works %}
-          {% if work.type == 'books' %}
-            <li class="{{ work.classes }}">
-              {% if work.img %}<img src="/{{ work.img }}">{% endif %}  
-              <p>
-                {{ work.title }}
-                <i>{{ work.pub_date }}, {{ work.publisher }}</i>
-              </p>
-            </li>
+          {% if work.type == 'book' %}
+             {{ wks.book(work) }}
           {% endif %}  
         {% endfor %}
       </ul>
@@ -68,36 +56,46 @@ layout: base.njk
 
 
   <section class="info">
+    <p>{{ bio | safe }}</p>
+    <div class="bar">
+      <div class="item">
+        <div class="link">
+          <a href="https://www.instagram.com/bohwang__/" target="_blank">@bohwang__</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="link">
+          <a href="mailto:bo.j.hwang@gmail.com">contact</a>
+        </div>
+      </div>
+      <div class="item">
+        <div class="more credits">
+          <span>credits</span>
+        </div>
+        <div class="expansion credits hide">
+          <span>The image above <i>Visit to Makon</i> was created by <a href='https://sometimes-always.com/' target='_blank'>Sometimes Always</a> for <a href='https://publicrecords.nyc/' target='_blank'>Public Record</a>’s launch of The Nursery. All other images are from the artist, venue or publisher, and friends.</span>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <div class="bar">
-    <div class="item">
-      <div class="link">
-        <a href="https://www.instagram.com/bohwang__/" target="_blank">@bohwang__</a>
-      </div>
-    </div>
-    <div class="item">
-      <div class="more credits" data-text="The image above ‘Visit to Makon’ was created by <a href='https://sometimes-always.com/' target='_blank'>Sometimes Always</a> for <a href='https://publicrecords.nyc/' target='_blank'>Public Record</a>’s launch of The Nursery. All other images are by artist and friends.">
-        <span>credits</span>
-      </div>
-    </div>
-  </div>
 </main>
 
-{# <script type="text/javascript">
+<script type="text/javascript">
   let more = document.querySelector('.more');
 
   more.addEventListener("click", function (e) {
     let el=e.currentTarget;
-    let html=el.querySelector('span');
+    let ex=el.nextElementSibling;
+    {# let bar=el.parentElement.parentElement; #}
 
-    if(!el.classList.contains('open')){
-        el.classList.add('open');
-        html.innerHTML=el.dataset.text;
+    if(!ex.classList.contains('hide')) {
+        ex.classList.add('hide');
     }else{
-      el.classList.remove('open');
-      html.innerText='credits';
+        ex.classList.remove('hide');
     }  
   });
-</script> #}
+
+</script>
+{% endmacro %}
 
