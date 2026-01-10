@@ -2,4 +2,28 @@
 layout: work.njk
 ---
 
-<h1>boo</h1>
+{% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
+
+{% if work.url %}<a href="{{ work.url }}" target="_blank"> 
+  <h1>
+    {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
+    <span class="highlight">{{ work.title }}<span>, <i>{{ work.publisher }}</i>
+  </h1>
+</a>
+{% else %}
+  <h1>
+    {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
+
+    <span class="highlight">{{ work.title }}<span>, <i>{{ work.publisher }}</i>
+  </h1>
+{% endif %}  
+
+
+<p>
+  {{ work.preview | safe }}
+</p>
+<p>
+  {{ work.date }}{% if work.venue and work.date %} | {% endif %}
+  {% if work.venue %} {{ work.venue }} {% endif %} 
+  {% if work.details %}- {{ work.details | safe}}{% endif %}  
+</p>

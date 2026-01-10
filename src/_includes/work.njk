@@ -4,7 +4,31 @@ pagination:
   size: 1
   alias: work
 permalink: 'works/{{ pagination.items[0].title | slug }}/index.html'
-layout: columns.njk
+layout: base.njk
 ---
 
-{{ content | safe }}
+<main class="work">
+<section class="grid navbar">
+  <ul class="published">
+    <li class="category">Short Fiction, Poems</li> 
+  </ul>
+  <ul class="perf-col">
+    <li class="category">Movement, Performance, Workshop</li>
+  </ul>
+  <ul class="proj-col">
+    <li class="category">Writing, Projects</li>
+  </ul>
+  <ul class="writ-col">
+    <li class="category"></li>
+  </ul>
+</section>
+
+<section class="sidebar">
+  <a href="/">Back</a>
+</section>
+
+<section class="work-detail">
+  {{ content | safe }}
+</section>
+
+</main>

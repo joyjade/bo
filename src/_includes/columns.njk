@@ -4,10 +4,8 @@ layout: base.njk
 
 {% import 'works.njk' as wks %}
 
-
-
-<main data-view="columns">
-  <section class="work">
+<main class="overview">
+  <section class="grid work">
     <ul class="published">
       <li class="category">Short Fiction, Poems</li> 
         {% for work in works %}
@@ -78,7 +76,6 @@ layout: base.njk
       </div>
     </div>
   </section>
-
 </main>
 
 <script type="text/javascript">
@@ -97,5 +94,4 @@ layout: base.njk
   });
 
 </script>
-{% endmacro %}
 
