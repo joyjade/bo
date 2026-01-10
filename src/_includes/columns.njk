@@ -29,7 +29,8 @@
     {% else %}
       <ul class="proj-col">
         <li class="category">Writing, Projects</li>
-        <div class="sticky">
+        <div>
+        {# <div class="sticky"> #}
         {% for work in works %}
           {% if work.type == 'project' %}
               {{ wks.project(work) }}
