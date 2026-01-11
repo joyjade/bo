@@ -1,6 +1,7 @@
 ---
 layout: work.njk
 ---
+{% import 'media.njk' as media %}
 
 <section class="sidebar">
   <a href="/">← Back</a>
@@ -24,5 +25,12 @@ layout: work.njk
 </section>
 
 <section class="work-detail">
-{# {% if work.img %}<img eleventy:widths="200,600" class="{{ work.imgopt }}" src="/assets/images/{{ work.img.src }}" alt="{{ work.img.alt }}">{% endif %}   #}
+  {% if work.img %}
+      {{ media.photo(work.img.src, work.img.alt, work.img.ext if work.img.ext else ".jpg") }}
+  {% endif %}  
+  <div class="gallery">   
+    {% for img in work.files %}
+        {{ media.photo(img.src, img.alt, img.ext if img.ext else ".jpg") }}
+    {% endfor %}
+  </div>
 </section>

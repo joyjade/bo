@@ -1,6 +1,6 @@
 {% macro photo(src, alt, ext=".jpg") %}
   {% set path = "/assets/images/" %}
   <div class="image">      
-      <img src="{{path+src+ext}}" alt="{{alt}}" eleventy:widths="400,2000" class="lazy" sizes="(min-width: 1280px) 300px, 50vw">
+      <img src="{{path+src+ext}}" alt="{{alt}}" eleventy:widths="300,600" class="lazy" sizes="(min-width: 1280px) 300px, 50vw">
   </div>
 {% endmacro %}

@@ -20,10 +20,12 @@
 {% macro movement(work)%}
 <li>
   <a href="/works/{{work.title | slug}}">
-    {# {% if work.img %}<img  eleventy:widths="200,600" class="{{ work.imgopt }}" src="/assets/images/{{ work.img.src }}" alt="{{ work.img.alt }}">{% endif %}   #}
+    {% if work.img %}
+      {{ media.photo(work.img.src, work.img.alt, work.img.ext if work.img.ext else ".jpg") }}
+    {% endif %}  
     <h3>
       {# {% if work.label %}<span class="label">{{ work.label}}</span>{% endif %}   #}
-      {{ work.title }}</a>
+      {{ work.title }}, {{ work.venue }}</a>
     </h3>
   </a>
 </li>
@@ -32,7 +34,9 @@
 
 {% macro book(work)%}
 <li>
-  {# {% if work.img %}<img  eleventy:widths="200,600" class="{{ work.imgopt }}"  src="/assets/images/{{ work.img.src }}" alt="{{ work.img.alt }}">{% endif %}   #}
+  {% if work.img %}
+      {{ media.photo(work.img.src, work.img.alt, work.img.ext if work.img.ext else ".jpg") }}
+  {% endif %}  
   <h3>
     <span class="label">{{ work.label if work.label else work.date}}</span>
     <a href="/works/{{work.title | slug}}"> <i>{{ work.title }}</i>, {{ work.publisher }}</a>
@@ -45,7 +49,9 @@
 
 {% macro project(work)%}
 <li>
-  {# {% if work.img %}<img  eleventy:widths="200,600" class="{{ work.imgopt }}" src="/assets/images/{{ work.img.src }}" alt="{{ work.img.alt }}">{% endif %}   #}
+  {% if work.img %}
+      {{ media.photo(work.img.src, work.img.alt, work.img.ext if work.img.ext else ".jpg") }}
+  {% endif %}  
   <h3>
     {% if work.label %}
       <span class="label">{{ work.label}}</span>

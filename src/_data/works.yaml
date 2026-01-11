@@ -1,4 +1,21 @@
 ---
+  - title: "an exquisite corpse" 
+    date: Dec 14, 2025
+    label: performance
+    venue: Desert Mystery Centery
+    location: Albuquerque, NM
+    type: movement
+    img: 
+      src: corpse_1 
+      alt: Bo Hwang and Althea Baird preparing to drink from a bowl
+    imgopt: thumb
+    details: A triptych performance of poetry, video, and dance with Althea Baird and mallika singh. For closing ceremony of the exhibition, Exquisite Corpse, curated and installed by Matthan Cowart. The night of readings was hosted by <a href="https://prroblem.press/">Prrroblem Press</a>. 
+    files: 
+      - src: corpse_2
+        alt: Documentation of performance
+      - src: corpse_3
+        alt: Documentation of performance
+
   - title: CALYPSO
     publisher: Piss Press
     type: published
@@ -68,14 +85,14 @@
       src: inch 
       alt: inch or I can barely move moving performance image
     imgopt: thumb
-    details: A solitary movement work of the body that figures and the body as composite. Inching and itching, physicalities make and lose sense of the room we’re in, “disaster, the long cell of it” (Force Drift, Jeffrey Pethybridge).
+    details: A solitary movement work of the body that figures and the body as composite. Inching and itching, physicalities make and lose sense of the room we’re in, “disaster, the long cell of it” (<i>Force Drift</i>). <br/><br/> Performed for the book release of Jeffrey Pethybridge's <i>Force Drift</i> (Tupelo Press). 
     files: 
-      - src: inch_1
-        alt: Documentation of performance
-      - src: inch_3 
-        alt: Documentation of performance
       - src: inch_4
         alt: Documentation of performance
+      - src: inch_1
+        alt: Documentation of performance
+      # - src: inch_3 
+      #   alt: Documentation of performance
       - src: inch_5
         alt: Documentation of performance
       - src: inch_6 
@@ -84,10 +101,21 @@
         alt: Documentation of performance
       - src: inch_9 
         alt: Documentation of performance
-      - src: syla_bos
-        type: vid
-        format: mobile
-        alt: A screen recording
+      # - src: syla_bos
+      #   type: vid
+      #   format: mobile
+      #   alt: A screen recording
+
+  - title: yearly in the old fountain
+    date: August 24, 2025
+    label: performance
+    venue: Sister C Press
+    img: 
+      src: yearly_performance
+      ext: .png
+      alt: yearly in the old pool performance image
+    type: movement
+    details: A reading performance of <i>yearly in the old pool</i> for the launch of Sister C Press, a new independent press dedicated to artist books. <i>yearly in the old pool</i> was Sister C's first book. 
 
   - title: "double dutch with remy malik" 
     date: April 20 -26, 2025
@@ -109,8 +137,9 @@
     venue: SITE Santa Fe
     type: movement
     img:
-      src: trebles.webp
+      src: trebles
       alt: amplifies it, doubles, trebles it performance image
+      ext: .webp
     details: Site-specific, multimedia performance series by kelechi agwuncha featuring transgenre, experimental sound artists, and performers. Also featuring Chuquimamani-Condori, Ryan Dennison and Ibrahima Fofana. <a href="https://www.sitesantafe.org/en/events/amplifies-it-doubles-trebles-it/">View event ↗</a> 
   
   - title: "Sound Museum" 
@@ -131,8 +160,9 @@
     venue: The Poetry Project
     type: movement
     img: 
-      src: slowdrags_03.png
+      src: slowdrags_03
       alt: Slow Drags Stray Physicalities workshop image
+      ext: .png
     details: "Deep Study Session with Saretta Morgan "
 
   - title: FATELESSNESS ON THE MEND, FATELESSNESS ON THE LAM 
