@@ -1,7 +1,11 @@
+{% import 'media.njk' as media %}
+
 {% macro published(work)%}
 <li>
   {% if work.url %}<a href="{{ work.url }}" target="_blank">{% endif %}  
-    {% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
+    {% if work.img %}
+      {{ media.photo(work.img.src, work.img.alt, work.img.ext if work.img.ext else ".jpg") }}
+    {% endif %}  
     <h3>
       {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
       <span class="highlight">{{ work.title }}<span>, <i>{{ work.publisher }}</i>
@@ -15,21 +19,12 @@
 
 {% macro movement(work)%}
 <li>
-  {% if work.url %}
-    <a href="{{ work.url }}">
-  {% endif %} 
-  {% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
-  <h3>
-    {% if work.label %}
-      <span class="label">{{ work.label}}</span>
-    {% endif %}  
-    <a href="/works/{{work.title | slug}}">{{ work.title }}</a>
-  </h3>
-  <p>
-    {{ work.date }}{% if work.venue and work.date %} | {% endif %}
-    {% if work.venue %} {{ work.venue }} {% endif %} 
-    {% if work.details %}- {{ work.details | safe}}{% endif %}  
-  </p>
+  <a href="/works/{{work.title | slug}}">
+    {# {% if work.img %}<img  eleventy:widths="200,600" class="{{ work.imgopt }}" src="/assets/images/{{ work.img.src }}" alt="{{ work.img.alt }}">{% endif %}   #}
+    <h3>
+      {# {% if work.label %}<span class="label">{{ work.label}}</span>{% endif %}   #}
+      {{ work.title }}</a>
+    </h3>
   </a>
 </li>
 {% endmacro %}
@@ -37,7 +32,7 @@
 
 {% macro book(work)%}
 <li>
-  {% if work.img %}<img class="{{ work.imgopt }}"  src="/{{ work.img }}">{% endif %}  
+  {# {% if work.img %}<img  eleventy:widths="200,600" class="{{ work.imgopt }}"  src="/assets/images/{{ work.img.src }}" alt="{{ work.img.alt }}">{% endif %}   #}
   <h3>
     <span class="label">{{ work.label if work.label else work.date}}</span>
     <a href="/works/{{work.title | slug}}"> <i>{{ work.title }}</i>, {{ work.publisher }}</a>
@@ -50,7 +45,7 @@
 
 {% macro project(work)%}
 <li>
-  {% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
+  {# {% if work.img %}<img  eleventy:widths="200,600" class="{{ work.imgopt }}" src="/assets/images/{{ work.img.src }}" alt="{{ work.img.alt }}">{% endif %}   #}
   <h3>
     {% if work.label %}
       <span class="label">{{ work.label}}</span>

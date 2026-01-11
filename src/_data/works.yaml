@@ -1,31 +1,20 @@
 ---
-  - title: alhambra
-    publisher: Club Rambutan
-    type: published
-    label: forthcoming
-    url: 
-    img: 
-    caption: 
-    preview: once he held his sister while a wave barreled overhead </br> unable to detect when to stand </br> she became vertiginous and indistinct </br> until his torso leaned into hers </br> and the shore reappeared
-    notes: 2025
-  
   - title: CALYPSO
     publisher: Piss Press
     type: published
     label: forthcoming
-    url: 
-    img: 
-    caption: 
     preview: When I took Na in, my dirt floor, I washed her hair with my mouth. What nefarious thick skin we had on, from our high immunity, from sucking every dish down.
+    notes: 2025
+
+  - title: alhambra
+    publisher: Club Rambutan
+    type: published
+    preview: once he held his sister while a wave barreled overhead </br> unable to detect when to stand </br> she became vertiginous and indistinct </br> until his torso leaned into hers </br> and the shore reappeared
     notes: 2025
   
   - title: day one
     publisher: Bombay Gin 49
     type: published
-    label: 
-    url: 
-    img: 
-    caption: 
     preview: The tension between things that always were and my life finally happening is I can’t tell anyone, including my best friend. Bro, I say, the floods have sloshed me and my drive, officially making me a shut in. 
     notes: June 2025
 
@@ -34,7 +23,9 @@
     type: published
     label: 
     url: https://www.visiblebinary.com/bo-hwang-hack
-    img: assets/images/pitiful_visiblebinary.jpg
+    img: 
+      src: pitiful_visiblebinary
+      alt: Hack Visible Binary cover image
     imgopt: thumb
     caption: 
     preview: Drying was not an act of will but an act of environment, being at odds with it. We took to odds easily, not wanting damp hair or cold wind<a href="https://www.visiblebinary.com/bo-hwang-hack" class="ellipses-loader">...</a> 
@@ -43,10 +34,6 @@
   - title: Slat
     publisher: "Bombay Gin: SLIT LOOM"
     type: published
-    label: 
-    url: 
-    img: 
-    caption: 
     preview: with K. Blasco Soler, after Mahmoud Darwish
     notes: June 2024
   
@@ -54,7 +41,9 @@
     publisher: The Poetry Project
     type: published
     url: https://www.poetryproject.org/publications/footnotes/work-from-memory-palaces-visions-echoes-forms-with-lucy-ives/she-did-not-sing
-    img: assets/images/fishhead.jpg
+    img: 
+      src: fishhead  
+      alt: She Did Not Sing Poetry Project cover image
     caption: 
     preview: Who can resist a good container? Outlined in silver, the naked couple held hands. A small vine climbed each leg. I thumbed over the pair of sloping shoulders, thick backs, and flat cheeks<a href="https://www.poetryproject.org/publications/footnotes/work-from-memory-palaces-visions-echoes-forms-with-lucy-ives/she-did-not-sing" class="ellipses-loader">...</a>
     notes: May 2021
@@ -63,7 +52,9 @@
     publisher: Wildness
     type: published
     url: https://readwildness.com/20/hwang-makon
-    img: assets/images/banyantree_sometimesalways.jpg
+    img: 
+      src: banyantree_sometimesalways 
+      alt: Visit to Makon cover image
     caption: 
     preview: “We can never go back,” I said softly, offering her a mantra, an antidote for keeping memory at bay. Even now, I hold those words close to my body, low, against the liver<a href="https://readwildness.com/20/hwang-makon" class="ellipses-loader">...</a>
     notes: August 2019
@@ -71,12 +62,32 @@
   - title: "inch or I can barely move moving" 
     date: Sept 26, 2025
     label: performance
-    url: 
-    venue: Leon Gallery
+    venue: Leon Gallery, Denver
     type: movement
-    img: assets/images/inch.jpg
+    img: 
+      src: inch 
+      alt: inch or I can barely move moving performance image
     imgopt: thumb
     details: A solitary movement work of the body that figures and the body as composite. Inching and itching, physicalities make and lose sense of the room we’re in, “disaster, the long cell of it” (Force Drift, Jeffrey Pethybridge).
+    files: 
+      - src: inch_1
+        alt: Documentation of performance
+      - src: inch_3 
+        alt: Documentation of performance
+      - src: inch_4
+        alt: Documentation of performance
+      - src: inch_5
+        alt: Documentation of performance
+      - src: inch_6 
+        alt: Documentation of performance
+      - src: inch_7 
+        alt: Documentation of performance
+      - src: inch_9 
+        alt: Documentation of performance
+      - src: syla_bos
+        type: vid
+        format: mobile
+        alt: A screen recording
 
   - title: "double dutch with remy malik" 
     date: April 20 -26, 2025
@@ -84,7 +95,9 @@
     url: https://counterpathpress.org/residency-bo-hwang-and-remi-malik-april-21-through-april-25-2025-closing-event-saturday-april-26-730pm
     venue: Counterpath
     type: movement
-    img: assets/images/doubledutch.jpg
+    img: 
+      src: doubledutch 
+      alt: double dutch with remy malik performance image
     imgopt: thumb
     details: A choreopoem of - Objectivity in 3 Acts (4 if you’re paying attention) - Another present moves alongside the present expropriated from (us). <a href="https://counterpathpress.org/residency-bo-hwang-and-remi-malik-april-21-through-april-25-2025-closing-event-saturday-april-26-730pm">View event ↗</a> 
 
@@ -95,7 +108,9 @@
     url: https://www.sitesantafe.org/en/events/amplifies-it-doubles-trebles-it/
     venue: SITE Santa Fe
     type: movement
-    img: assets/images/trebles.webp
+    img:
+      src: trebles.webp
+      alt: amplifies it, doubles, trebles it performance image
     details: Site-specific, multimedia performance series by kelechi agwuncha featuring transgenre, experimental sound artists, and performers. Also featuring Chuquimamani-Condori, Ryan Dennison and Ibrahima Fofana. <a href="https://www.sitesantafe.org/en/events/amplifies-it-doubles-trebles-it/">View event ↗</a> 
   
   - title: "Sound Museum" 
@@ -104,7 +119,9 @@
     url: https://counterpathpress.org/reading-and-performance-featuring-poupeh-missaghis-sound-museum-with-bo-hwang-brian-alarcon-and-neshat-sadatmansoori-thursday-november-14-2024-7pm
     venue: Counterpath
     type: movement
-    img: assets/images/soundmuseum.jpg
+    img: 
+      src: soundmuseum 
+      alt: Sound Museum performance image
     details: "A sound and theater performance of Poupeh Missaghi’s <i>Sound Museum</i> (Coffee House Press 2024), a theory fiction, with Brian Alarcon, Valerie Hsiung and Neshat Sadatmansoori."
   
   - title: "Slow Drags :: Stray Physicalities"
@@ -113,7 +130,9 @@
     url: https://www.poetryproject.org/events/slow-drags-stray-physicalities-deep-study-session-with-saretta-morgan-bo-hwang
     venue: The Poetry Project
     type: movement
-    img: assets/images/slowdrags_03.png
+    img: 
+      src: slowdrags_03.png
+      alt: Slow Drags Stray Physicalities workshop image
     details: "Deep Study Session with Saretta Morgan "
 
   - title: FATELESSNESS ON THE MEND, FATELESSNESS ON THE LAM 
@@ -122,7 +141,9 @@
     url: https://counterpathpress.org/fatelessness-on-the-mend-fatelessness-on-the-lam-a-poetry-performance-and-choreo-chorus-by-valerie-hsiung-body-and-voice-by-valerie-hsiung-shreeya-shrestha-ben-claus-and-bo-hwang-wednesday
     venue: Counterpath
     type: movement
-    img: assets/images/fatelessness.jpg
+    img: 
+      src: fatelessness 
+      alt: FATELESSNESS ON THE MEND, FATELESSNESS ON THE LAM performance image
     details: A poetry performance and choreo-chorus by Valerie Hsiung, with Ben Claus and Shreeya Shrestha
 
   - title: carpet jaw [sūdjūd] with remy malik
@@ -131,7 +152,9 @@
     url: https://fivesquarterly.com/bo-hwang-remy-malik/
     venue: "F I V E S: Denver Quarterly"
     type: movement
-    img: assets/images/sudjud_3.jpg
+    img: 
+      src: sudjud_3 
+      alt: carpet jaw [sūdjūd] with remy malik video image
     details:
 
   - title: Alt-Nature
@@ -140,7 +163,9 @@
     label: performance
     venue: Counterpath
     type: movement
-    img: assets/images/altnature.jpg
+    img: 
+      src: altnature 
+      alt: Alt-Nature performance image
     details: In celebration of Saretta Morgan’s book release, <i>Alt-Nature</i> from Coffee House Press, a performance with remy malik and Brian Alarcon. <a href="https://vimeo.com/939423346" target="_blank">Watch here.</a>
 
   - title: "Movement Workshops: slothing sleuthing, frantic assembly, body language, earthworks, blobjects in touch."
@@ -148,14 +173,18 @@
     label: workshop
     venue: Naropa University
     type: movement
-    img: assets/images/movement.jpg
+    img: 
+      src: movement 
+      alt: Movement Workshops image
     details: 
 
   - title: yearly in the old pool
     date: Aug 2025
     publisher: Sister C Press
     type: project
-    img: assets/images/yearly.jpg
+    img: 
+      src: yearly 
+      alt: yearly in the old pool cover image
     imgopt: cover
     url: 
     details: 'An artist book. Vellum, blue ink, bead and string, cardstock folder, blue ink.<br/> “We are all slingers in our own right </br> It can look anyway anyone wants </br> Everytime the dropped will know”'
@@ -164,7 +193,9 @@
     date: March 2025
     publisher: Counterpath
     type: project
-    img: assets/images/abalone_cover.jpg
+    img:
+      src: abalone_cover  
+      alt: abalone cover image
     imgopt: cover
     url: https://counterpathpress.org/abalonebo-hwang
     details: 'A poetry performance, object, and chapbook. <br/> “Day by day, one makes of a broken wall a place to stand. That is how to cross the rubble, call a friend, kill time. What I don’t have time to tell you becomes physical and what is physical will bear the load. It has to.” <a href="https://asterismbooks.com/product/abalone-bo-hwang">Preorder chapbook here ↗</a>'
@@ -175,7 +206,6 @@
     label: finalist
     publisher: Essay Press
     type: project
-    img: 
     details: An essay-poem collection on tropical fecundity and density as coverage, 2024 Chapbook Contest. 
 
   - title: Nightlaps
@@ -183,7 +213,6 @@
     label: finalist
     publisher: Wendy’s Subway
     type: project
-    img: 
     details: 2024 Open Reading Period judged by Bhanu Kapil.
   
  

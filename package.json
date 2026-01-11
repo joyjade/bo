@@ -1,6 +1,6 @@
 {
   "name": "bo",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "This is a website for Bo Hwang",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/joyjade/bo#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.1"
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "dependencies": {
+    "@11ty/eleventy-img": "^6.0.4",
+    "dotenv": "^17.2.3"
   }
 }

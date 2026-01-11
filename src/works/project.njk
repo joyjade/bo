@@ -2,28 +2,27 @@
 layout: work.njk
 ---
 
-{% if work.img %}<img class="{{ work.imgopt }}" src="/{{ work.img }}">{% endif %}  
-
-{% if work.url %}<a href="{{ work.url }}" target="_blank"> 
-  <h1>
-    {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
-    <span class="highlight">{{ work.title }}<span>, <i>{{ work.publisher }}</i>
-  </h1>
-</a>
-{% else %}
-  <h1>
-    {% if work.label %}<span class="label">{{ work.label }}</span>{% endif %}  
-
-    <span class="highlight">{{ work.title }}<span>, <i>{{ work.publisher }}</i>
-  </h1>
-{% endif %}  
+<section class="sidebar">
+  <a href="/">← Back</a>
 
 
-<p>
-  {{ work.preview | safe }}
-</p>
-<p>
-  {{ work.date }}{% if work.venue and work.date %} | {% endif %}
-  {% if work.venue %} {{ work.venue }} {% endif %} 
-  {% if work.details %}- {{ work.details | safe}}{% endif %}  
-</p>
+  <div>     
+    <h1>{{ work.title }}</h1>
+
+    {% if work.details %}
+      <p>{{ work.details | safe}}</p>
+    {% endif %}  
+  </div>
+  <ul class="meta">
+    <li>{{ work.date }}</li>
+    {% if work.url %}<a href="{{ work.url }}" target="_blank">{% endif %}   
+      {% if work.venue %} <li>{{ work.venue }}</li> {% endif %} 
+    {% if work.url %}</a>{% endif %}   
+    {% if work.label %}<li>{{ work.label }}</li>{% endif %}  
+    <li>{{ work.publisher }}</li>
+  </ul>
+</section>
+
+<section class="work-detail">
+{# {% if work.img %}<img eleventy:widths="200,600" class="{{ work.imgopt }}" src="/assets/images/{{ work.img.src }}" alt="{{ work.img.alt }}">{% endif %}   #}
+</section>
