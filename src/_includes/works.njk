@@ -34,33 +34,37 @@
 
 {% macro book(work)%}
 <li>
-  {% if work.img %}
-      {{ media.photo(work.img.src, work.img.alt, work.img.ext if work.img.ext else ".jpg") }}
-  {% endif %}  
-  <h3>
-    <span class="label">{{ work.label if work.label else work.date}}</span>
-    <a href="/works/{{work.title | slug}}"> <i>{{ work.title }}</i>, {{ work.publisher }}</a>
-  </h3>
-  <p>
-    {% if work.details %}{{ work.details | safe}}{% endif %}  
-  </p>
+  <a href="/works/{{work.title | slug}}">
+    {% if work.img %}
+        {{ media.photo(work.img.src, work.img.alt, work.img.ext if work.img.ext else ".jpg") }}
+    {% endif %}  
+    <h3>
+      <span class="label">{{ work.label if work.label else work.date}}</span>
+      <a href="/works/{{work.title | slug}}"> <i>{{ work.title }}</i>, {{ work.publisher }}</a>
+    </h3>
+    <p>
+      {% if work.details %}{{ work.details | safe}}{% endif %}  
+    </p>
+  </a>
 </li>
 {% endmacro %}
 
 {% macro project(work)%}
 <li>
-  {% if work.img %}
-      {{ media.photo(work.img.src, work.img.alt, work.img.ext if work.img.ext else ".jpg") }}
-  {% endif %}  
-  <h3>
-    {% if work.label %}
-      <span class="label">{{ work.label}}</span>
+  <a href="/works/{{work.title | slug}}">
+    {% if work.img %}
+        {{ media.photo(work.img.src, work.img.alt, work.img.ext if work.img.ext else ".jpg") }}
     {% endif %}  
-    <a href="/works/{{work.title | slug}}">{{ work.title }}</a>, {{ work.publisher }}, {{work.date}}
-  </h3>
-  <p>
-    {% if work.details %}{{ work.details | safe}}{% endif %}  
-  </p>
+    <h3>
+      {% if work.label %}
+        <span class="label">{{ work.label}}</span>
+      {% endif %}  
+      <a href="/works/{{work.title | slug}}">{{ work.title }}</a>, {{ work.publisher }}, {{work.date}}
+    </h3>
+    <p>
+      {% if work.details %}{{ work.details | safe}}{% endif %}  
+    </p>
+  </a>
 </li>
 {% endmacro %}
 
