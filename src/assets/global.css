@@ -64,6 +64,17 @@ section ul {
   list-style-type: none;
   width: 100%;
   box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+ul {
+  overflow: scroll;         /* or auto */
+  scrollbar-width: none;    /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+ul::-webkit-scrollbar, section.work-detail::-webkit-scrollbar {
+  display: none;            /* Chrome, Safari, Opera */
 }
 
 section ul:nth-of-type(2) {
@@ -248,6 +259,12 @@ section.info p {
 /* responsive */
 
 
+@media (min-width: 901px)  {
+  main {
+    height: 100vh;
+  }
+
+}
 @media (max-width: 900px)  {
   main {
     display: flex;
@@ -311,7 +328,7 @@ section.info p {
   }
   .proj-col { order: 2;}
   .perf-col { order: 3;}
-  .writ-col { order: 1;}
+  .writ-col { display: none;}
   .published { order: 4;}
 
   section.info {
