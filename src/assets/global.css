@@ -160,7 +160,9 @@ li:hover img{
   width: 80%;
 } */
 
-.published li.category {
+/* NO IMAGE AT TOP */
+
+.published li.category, .perf-col li.category {
   margin-bottom: 0.5rem;
 }
 
@@ -196,6 +198,15 @@ section.info p {
   /* max-width: 450px; */
   /* font-size: 1.25rem; */
   /* margin: 0.5rem; */
+}
+
+section.info p a {
+  text-decoration: underline;
+  color: black;
+}
+
+section.info p a:hover {
+  color: rgb(226, 219, 93);
 }
 
 

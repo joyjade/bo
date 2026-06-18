@@ -1,5 +1,5 @@
 ---
-  - title: CALYPSO
+  - title: one day, excerpts from CALYPSO
     publisher: Piss Press
     type: published
     label: forthcoming
@@ -68,6 +68,20 @@
     preview: There aren’t quite seven balconies, now that I’ve seen the place. There is one true balcony<a href="https://readwildness.com/20/hwang-makon" class="ellipses-loader">...</a>
     notes: August 2019
 
+  - title: The pedestrian with Brian Alarcon and Neshat Sadatmansoori
+    date: Friday, July 10th 2026 at 7pm
+    label: forthcoming
+    venue: dear friend books, New York
+    type: movement
+    details: A performance for the release of Valerie Hsiung’s <i><a href="https://nightboat.org/book/the-pedestrian/">The pedestrian</a></i>.
+  
+  - title: "~a desert without time~"
+    date: June 1, 2026
+    label: lecture
+    venue: Summer Writing Program at the Jack Kerouac School of Disembodied Poetics, Naropa University
+    type: movement
+    details: Four Seasons in Four Performances
+
   - title: "inch or I can barely move moving" 
     date: Sept 26, 2025
     label: performance
@@ -75,7 +89,7 @@
     type: movement
     img: assets/images/inch.jpg
     imgopt: thumb
-    details: A solitary movement work of the body that figures and the body as composite. Inching and itching, physicalities make and lose sense of the room we’re in, “disaster, the long cell of it.” Performed for the book release of Jeffrey Pethybridge's <i>Force Drift</i> (Tupelo Press). 
+    details: A solitary movement work of the body that figures and the body as composite. Inching and itching, physicalities make and lose sense of the room we’re in, “disaster, the long cell of it.” Performed for the book release of Jeffrey Pethybridge’s <i>Force Drift</i> (Tupelo Press). 
 
   - title: "double dutch with remy malik" 
     date: April 20 -26, 2025
@@ -149,6 +163,15 @@
     type: movement
     img: assets/images/movement.jpg
     details: 
+
+  # - title: Calypso
+  #   date: Spring 2027
+  #   label: forthcoming
+  #   publisher: Changes Press
+  #   type: project
+  #   url: https://counterpathpress.org/abalonebo-hwang
+  #   details: Selected by Simone White for the Changes Book Prize
+
 
   - title: abalone
     date: 2025
