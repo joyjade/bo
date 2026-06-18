@@ -179,8 +179,8 @@ section.info {
   justify-content: center;
   top: 1.8rem;
   margin: 1rem;
-  /* bottom: 0;
-  right: 0; */
+  right: 0; 
+  /* bottom: 0;*/
   /* display: flex; */
   z-index: 10;
   max-width: calc(25vw - 40px);
